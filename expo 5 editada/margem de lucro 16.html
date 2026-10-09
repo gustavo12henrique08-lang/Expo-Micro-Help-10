@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Análise de Margem por Produto</title>
+
+    <link rel="stylesheet" href="configuracao da tabelas.css">
+</head>
+
+<body>
+
+    <!-- BOTÃO VOLTAR -->
+    <button class="voltar"
+        onclick="window.location.href='index.html'"
+        aria-label="Voltar">
+        ←
+    </button>
+
+
+    <!-- CABEÇALHO -->
+    <header class="cabecalho">
+
+        <h1>ANÁLISE DE MARGEM POR PRODUTO</h1>
+
+        <h2>OBJETIVO DA PLANILHA</h2>
+
+        <p>
+            Comparar preço de venda e custo para estimar lucro bruto e
+            margem bruta por produto. Ajuda a perceber itens com margem
+            baixa e orientar revisões.
+        </p>
+
+    </header>
+
+
+    <!-- INSTRUÇÕES -->
+    <section class="instrucoes">
+
+        <div class="instrucao">
+
+            <h3>COMO USAR — PASSO A PASSO</h3>
+
+            <p>
+                Informe o preço efetivo de venda e o custo total unitário,
+                incluindo os componentes definidos na política da empresa.
+                O lucro bruto é preço menos custo; a margem é o lucro bruto
+                dividido pelo preço de venda.
+            </p>
+
+        </div>
+
+
+        <div class="instrucao">
+
+            <h3>COMO INTERPRETAR E CUIDADOS</h3>
+
+            <p>
+                Margem não é igual a acréscimo sobre custo. Exemplo:
+                vender por R$ 50 com custo de R$ 30 gera R$ 20 de lucro
+                bruto e margem de 40%. A margem bruta não inclui
+                necessariamente todas as despesas administrativas e
+                financeiras.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- PLANILHA -->
+    <main class="planilha-container">
+
+
+        <!-- TÍTULO -->
+        <div class="titulo-planilha">
+
+            <strong>
+                EXEMPLOS PREENCHIDOS — dados fictícios para
+            </strong>
+
+            <span>
+                Células amarelas: entrada manual |
+                Células verdes: cálculo automático
+            </span>
+
+        </div>
+
+
+        <!-- TABELA -->
+        <div class="tabela-wrapper">
+
+            <table class="planilha">
+
+                <thead>
+
+                    <tr>
+
+                        <th>Produto</th>
+
+                        <th>Preço de venda (R$)</th>
+
+                        <th>Custo total unit. (R$)</th>
+
+                        <th>Lucro bruto (R$)</th>
+
+                        <th>Margem bruta (%)</th>
+
+                        <th>Meta de margem (%)</th>
+
+                        <th>Diferença para meta (p.p.)</th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+
+                    <!-- KIT ORGANIZADOR -->
+
+                    <tr>
+
+                        <td>Kit organizador</td>
+
+                        <td>R$ 45,00</td>
+
+                        <td>R$ 25,00</td>
+
+                        <td class="calculo">R$ 20,00</td>
+
+                        <td class="calculo">44,4%</td>
+
+                        <td class="meta">40,0%</td>
+
+                        <td class="calculo positivo">4,4%</td>
+
+                    </tr>
+
+
+                    <!-- CAIXA ORGANIZADORA -->
+
+                    <tr>
+
+                        <td>Caixa organizadora</td>
+
+                        <td>R$ 32,00</td>
+
+                        <td>R$ 18,50</td>
+
+                        <td class="calculo">R$ 13,50</td>
+
+                        <td class="calculo">42,2%</td>
+
+                        <td class="meta">40,0%</td>
+
+                        <td class="calculo positivo">2,2%</td>
+
+                    </tr>
+
+
+                    <!-- PRATELEIRA PEQUENA -->
+
+                    <tr>
+
+                        <td>Prateleira pequena</td>
+
+                        <td>R$ 120,00</td>
+
+                        <td>R$ 76,00</td>
+
+                        <td class="calculo">R$ 44,00</td>
+
+                        <td class="calculo">36,7%</td>
+
+                        <td class="meta">40,0%</td>
+
+                        <td class="calculo negativo">-3,3%</td>
+
+                    </tr>
+
+
+                    <!-- ORGANIZADOR MULTIUSO -->
+
+                    <tr>
+
+                        <td>Organizador multiuso</td>
+
+                        <td>R$ 28,00</td>
+
+                        <td>R$ 13,50</td>
+
+                        <td class="calculo">R$ 14,50</td>
+
+                        <td class="calculo">51,8%</td>
+
+                        <td class="meta">40,0%</td>
+
+                        <td class="calculo positivo">11,8%</td>
+
+                    </tr>
+
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </main>
+
+
+</body>
+
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Centro de Custos por Área</title>
+
+    <link rel="stylesheet" href="configuracao da tabelas.css">
+</head>
+
+<body>
+
+    <!-- BOTÃO VOLTAR -->
+    <button class="voltar" onclick="window.location.href='index.html'" aria-label="Voltar">
+        ←
+    </button>
+
+
+    <!-- CABEÇALHO -->
+    <header class="cabecalho">
+
+        <h1>CENTRO DE CUSTOS POR ÁREA</h1>
+
+        <h2>OBJETIVO DA PLANILHA</h2>
+
+        <p>
+            Separar gastos por área, atividade, projeto ou unidade para
+            compreender quais partes do negócio consomem mais recursos.
+        </p>
+
+    </header>
+
+
+    <!-- INSTRUÇÕES -->
+    <section class="instrucoes">
+
+        <div class="instrucao">
+
+            <h3>COMO USAR — PASSO A PASSO</h3>
+
+            <p>
+                Defina centros, por exemplo Administração, Vendas, Operação
+                e Entrega. Em cada despesa, escolha apenas o centro mais
+                adequado e registre o valor. Se um gasto atender várias áreas,
+                defina um critério de rateio documentado.
+            </p>
+
+        </div>
+
+
+        <div class="instrucao">
+
+            <h3>COMO INTERPRETAR E CUIDADOS</h3>
+
+            <p>
+                Rateio é uma estimativa gerencial, não deve ser feito
+                aleatoriamente. Use uma regra consistente, como percentual
+                de uso, horas trabalhadas ou área ocupada, e revise-a quando
+                a operação mudar.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- PLANILHA -->
+    <main class="planilha-container">
+
+
+        <!-- TÍTULO DA PLANILHA -->
+        <div class="titulo-planilha">
+
+            <strong>
+                EXEMPLOS PREENCHIDOS — dados fictícios para
+            </strong>
+
+            <span>
+                Células amarelas: entrada manual |
+                Células verdes: cálculo automático
+            </span>
+
+        </div>
+
+
+        <!-- TABELA -->
+        <div class="tabela-wrapper">
+
+            <table class="planilha">
+
+                <thead>
+
+                    <tr>
+
+                        <th>Data</th>
+
+                        <th>Centro de custo</th>
+
+                        <th>Despesa/Projeto</th>
+
+                        <th>Tipo</th>
+
+                        <th>Critério de rateio</th>
+
+                        <th>Percentual alocado</th>
+
+                        <th>Valor original (R$)</th>
+
+                        <th>Valor alocado (R$)</th>
+
+                        <th>Responsável</th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+                    <!-- LINHA 1 -->
+
+                    <tr>
+
+                        <td>01/10/2026</td>
+
+                        <td>Administração</td>
+
+                        <td>Internet empresarial</td>
+
+                        <td>Indireto</td>
+
+                        <td>Uso estimado</td>
+
+                        <td>30,0%</td>
+
+                        <td>R$ 120,00</td>
+
+                        <td class="calculo">R$ 36,00</td>
+
+                        <td>Gestor</td>
+
+                    </tr>
+
+
+                    <!-- LINHA 2 -->
+
+                    <tr>
+
+                        <td>01/10/2026</td>
+
+                        <td>Vendas</td>
+
+                        <td>Internet empresarial</td>
+
+                        <td>Indireto</td>
+
+                        <td>Uso estimado</td>
+
+                        <td>40,0%</td>
+
+                        <td>R$ 120,00</td>
+
+                        <td class="calculo">R$ 48,00</td>
+
+                        <td>Comercial</td>
+
+                    </tr>
+
+
+                    <!-- LINHA 3 -->
+
+                    <tr>
+
+                        <td>01/10/2026</td>
+
+                        <td>Operação</td>
+
+                        <td>Internet empresarial</td>
+
+                        <td>Indireto</td>
+
+                        <td>Uso estimado</td>
+
+                        <td>30,0%</td>
+
+                        <td>R$ 120,00</td>
+
+                        <td class="calculo">R$ 36,00</td>
+
+                        <td>Operação</td>
+
+                    </tr>
+
+
+                    <!-- LINHA 4 -->
+
+                    <tr>
+
+                        <td>02/10/2026</td>
+
+                        <td>Entrega</td>
+
+                        <td>Motoboy</td>
+
+                        <td>Direto</td>
+
+                        <td>Entrega do pedido</td>
+
+                        <td>100,0%</td>
+
+                        <td>R$ 68,00</td>
+
+                        <td class="calculo">R$ 68,00</td>
+
+                        <td>Logística</td>
+
+                    </tr>
+
+
+                    <!-- LINHA 5 -->
+
+                    <tr>
+
+                        <td>03/10/2026</td>
+
+                        <td>Operação</td>
+
+                        <td>Embalagens</td>
+
+                        <td>Direto</td>
+
+                        <td>Consumo de produção</td>
+
+                        <td>100,0%</td>
+
+                        <td>R$ 185,00</td>
+
+                        <td class="calculo">R$ 185,00</td>
+
+                        <td>Operação</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cadastro e Avaliação de Fornecedores</title>
+
+    <link rel="stylesheet" href="configuracao da tabelas.css">
+</head>
+
+<body>
+
+    <!-- BOTÃO VOLTAR -->
+    <button class="voltar" onclick="window.location.href='index.html'" aria-label="Voltar">
+        ←
+    </button>
+
+
+    <!-- CABEÇALHO -->
+    <header class="cabecalho">
+
+        <h1>CADASTRO E AVALIAÇÃO DE FORNECEDORES</h1>
+
+        <h2>OBJETIVO DA PLANILHA</h2>
+
+        <p>
+            Centralizar contatos, produtos fornecidos, prazos e condições
+            de pagamento para facilitar cotações e reduzir dependência de
+            um único fornecedor.
+        </p>
+
+    </header>
+
+
+    <!-- INSTRUÇÕES -->
+    <section class="instrucoes">
+
+        <div class="instrucao">
+
+            <h3>COMO USAR — PASSO A PASSO</h3>
+
+            <p>
+                Cadastre dados comerciais atualizados, prazo médio de entrega,
+                pedido mínimo e condições. Após cada compra importante, avalie
+                qualidade, pontualidade e atendimento. Guarde cotações e
+                documentos fiscais em local apropriado.
+            </p>
+
+        </div>
+
+
+        <div class="instrucao">
+
+            <h3>COMO INTERPRETAR E CUIDADOS</h3>
+
+            <p>
+                Compare o custo total, não apenas o preço unitário: frete,
+                prazo, qualidade, devoluções e confiabilidade também influenciam.
+                Proteja os contatos e dados comerciais da empresa.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- PLANILHA -->
+    <main class="planilha-container">
+
+
+        <!-- TÍTULO -->
+        <div class="titulo-planilha">
+
+            <strong>
+                EXEMPLOS PREENCHIDOS — dados fictícios para
+            </strong>
+
+            <span>
+                Células amarelas: entrada manual |
+                Células verdes: cálculo automático
+            </span>
+
+        </div>
+
+
+        <!-- TABELA -->
+        <div class="tabela-wrapper">
+
+            <table class="planilha">
+
+                <thead>
+
+                    <tr>
+
+                        <th>Fornecedor</th>
+
+                        <th>Categoria</th>
+
+                        <th>Contato</th>
+
+                        <th>Telefone</th>
+
+                        <th>E-mail</th>
+
+                        <th>Prazo (dias)</th>
+
+                        <th>Pedido mínimo (R$)</th>
+
+                        <th>Pagamento</th>
+
+                        <th>Nota qualidade (1-5)</th>
+
+                        <th>Última avaliação</th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+                    <!-- FORNECEDOR 1 -->
+
+                    <tr>
+
+                        <td>Distribuidora Alfa</td>
+
+                        <td>Mercadorias</td>
+
+                        <td>Paulo</td>
+
+                        <td>(11) 4000-1001</td>
+
+                        <td>vendas@alfa.exemplo</td>
+
+                        <td>3</td>
+
+                        <td>R$ 500,00</td>
+
+                        <td>28 dias</td>
+
+                        <td class="avaliacao">4</td>
+
+                        <td>01/10/2026</td>
+
+                    </tr>
+
+
+                    <!-- FORNECEDOR 2 -->
+
+                    <tr>
+
+                        <td>Embalagens Brasil</td>
+
+                        <td>Embalagens</td>
+
+                        <td>Lívia</td>
+
+                        <td>(11) 4000-1002</td>
+
+                        <td>pedidos@embalagens.exemplo</td>
+
+                        <td>5</td>
+
+                        <td>R$ 150,00</td>
+
+                        <td>Pix na entrega</td>
+
+                        <td class="avaliacao">5</td>
+
+                        <td>02/10/2026</td>
+
+                    </tr>
+
+
+                    <!-- FORNECEDOR 3 -->
+
+                    <tr>
+
+                        <td>Casa & Cia Atacado</td>
+
+                        <td>Utilidades</td>
+
+                        <td>Renata</td>
+
+                        <td>(11) 4000-1003</td>
+
+                        <td>comercial@casa.exemplo</td>
+
+                        <td>7</td>
+
+                        <td>R$ 800,00</td>
+
+                        <td>14 dias</td>
+
+                        <td class="avaliacao">3</td>
+
+                        <td>03/10/2026</td>
+
+                    </tr>
+
+
+                    <!-- FORNECEDOR 4 -->
+
+                    <tr>
+
+                        <td>Logística Rápida</td>
+
+                        <td>Entrega</td>
+
+                        <td>Marcos</td>
+
+                        <td>(11) 4000-1004</td>
+
+                        <td>operacao@logistica.exemplo</td>
+
+                        <td>1</td>
+
+                        <td>R$ 0,00</td>
+
+                        <td>Por entrega</td>
+
+                        <td class="avaliacao">4</td>
+
+                        <td>04/10/2026</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>

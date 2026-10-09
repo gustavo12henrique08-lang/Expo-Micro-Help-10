@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Histórico de Compras por Cliente</title>
+
+    <link rel="stylesheet" href="configuracao da tabelas.css">
+</head>
+
+<body>
+
+    <!-- BOTÃO VOLTAR -->
+    <button class="voltar" onclick="window.location.href='index.html'" aria-label="Voltar">
+        ←
+    </button>
+
+
+    <!-- CABEÇALHO -->
+    <header class="cabecalho">
+
+        <h1>HISTÓRICO DE COMPRAS POR CLIENTE</h1>
+
+        <h2>OBJETIVO DA PLANILHA</h2>
+
+        <p>
+            Registrar transações anteriores para identificar recorrência,
+            preferências e oportunidades de atendimento ou recompra.
+        </p>
+
+    </header>
+
+
+    <!-- INSTRUÇÕES -->
+    <section class="instrucoes">
+
+        <div class="instrucao">
+
+            <h3>COMO USAR — PASSO A PASSO</h3>
+
+            <p>
+                Use sempre o código do cliente e número da venda do controle
+                comercial. Registre data, produtos, quantidades, total e canal.
+                Em caso de devolução, registre a ocorrência em vez de apagar
+                o histórico.
+            </p>
+
+        </div>
+
+
+        <div class="instrucao">
+
+            <h3>COMO INTERPRETAR E CUIDADOS</h3>
+
+            <p>
+                O histórico ajuda a oferecer produtos relevantes, mas não garante
+                que o cliente queira receber ofertas. Respeite preferências de
+                comunicação e confira se os valores coincidem com o registro
+                de vendas.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- PLANILHA -->
+    <main class="planilha-container">
+
+
+        <!-- TÍTULO DA PLANILHA -->
+        <div class="titulo-planilha">
+
+            <strong>
+                EXEMPLOS PREENCHIDOS — dados fictícios para
+            </strong>
+
+            <span>
+                Células amarelas: entrada manual |
+                Células verdes: cálculo automático
+            </span>
+
+        </div>
+
+
+        <!-- TABELA -->
+        <div class="tabela-wrapper">
+
+            <table class="planilha">
+
+                <thead>
+
+                    <tr>
+
+                        <th>Data</th>
+
+                        <th>Código cliente</th>
+
+                        <th>Cliente</th>
+
+                        <th>Nº venda</th>
+
+                        <th>Produto</th>
+
+                        <th>Quantidade</th>
+
+                        <th>Valor total (R$)</th>
+
+                        <th>Canal</th>
+
+                        <th>Situação</th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+                    <!-- VENDA 1 -->
+
+                    <tr>
+
+                        <td>02/10/2026</td>
+
+                        <td>CLI-001</td>
+
+                        <td>Marina Lopes</td>
+
+                        <td>V-101</td>
+
+                        <td>Kit organizador</td>
+
+                        <td>2</td>
+
+                        <td class="calculo">R$ 90,00</td>
+
+                        <td>Loja</td>
+
+                        <td class="situacao">Concluída</td>
+
+                    </tr>
+
+
+                    <!-- VENDA 2 -->
+
+                    <tr>
+
+                        <td>02/10/2026</td>
+
+                        <td>CLI-002</td>
+
+                        <td>Mercadinho Sol</td>
+
+                        <td>V-102</td>
+
+                        <td>Caixa organizadora</td>
+
+                        <td>10</td>
+
+                        <td class="calculo">R$ 300,00</td>
+
+                        <td>WhatsApp</td>
+
+                        <td class="situacao">Concluída</td>
+
+                    </tr>
+
+
+                    <!-- VENDA 3 -->
+
+                    <tr>
+
+                        <td>03/10/2026</td>
+
+                        <td>CLI-003</td>
+
+                        <td>Rafael Costa</td>
+
+                        <td>V-103</td>
+
+                        <td>Prateleira pequena</td>
+
+                        <td>1</td>
+
+                        <td class="calculo">R$ 120,00</td>
+
+                        <td>Loja</td>
+
+                        <td class="situacao">Concluída</td>
+
+                    </tr>
+
+
+                    <!-- VENDA 4 -->
+
+                    <tr>
+
+                        <td>04/10/2026</td>
+
+                        <td>CLI-002</td>
+
+                        <td>Mercadinho Sol</td>
+
+                        <td>V-104</td>
+
+                        <td>Kit organizador</td>
+
+                        <td>5</td>
+
+                        <td class="calculo">R$ 220,00</td>
+
+                        <td>WhatsApp</td>
+
+                        <td class="situacao">Concluída</td>
+
+                    </tr>
+
+
+                    <!-- VENDA 5 -->
+
+                    <tr>
+
+                        <td>05/10/2026</td>
+
+                        <td>CLI-004</td>
+
+                        <td>Ana Ribeiro</td>
+
+                        <td>V-105</td>
+
+                        <td>Organizador multiuso</td>
+
+                        <td>3</td>
+
+                        <td class="calculo">R$ 84,00</td>
+
+                        <td>Instagram</td>
+
+                        <td class="situacao">Concluída</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>

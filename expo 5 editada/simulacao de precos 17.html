@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Simulação de Preços e Cenários</title>
+
+    <link rel="stylesheet" href="configuracao da tabelas.css">
+</head>
+
+<body>
+
+    <!-- BOTÃO VOLTAR -->
+    <button class="voltar" onclick="window.location.href='index.html'" aria-label="Voltar">
+        ←
+    </button>
+
+
+    <!-- CABEÇALHO -->
+    <header class="cabecalho">
+
+        <h1>SIMULAÇÃO DE PREÇOS E CENÁRIOS</h1>
+
+        <h2>OBJETIVO DA PLANILHA</h2>
+
+        <p>
+            Testar o impacto de preços e volumes diferentes sobre receita,
+            custo estimado, resultado simplificado e margem. Use cenários
+            para decidir com mais informação, não como garantia de vendas.
+        </p>
+
+    </header>
+
+
+    <!-- INSTRUÇÕES -->
+    <section class="instrucoes">
+
+        <div class="instrucao">
+
+            <h3>COMO USAR — PASSO A PASSO</h3>
+
+            <p>
+                Informe o custo unitário, preço que deseja testar e quantidade
+                provável de vendas. Compare cenário conservador, provável e
+                otimista. Atualize os custos e percentuais quando fornecedores,
+                impostos ou taxas mudarem.
+            </p>
+
+        </div>
+
+
+        <div class="instrucao">
+
+            <h3>COMO INTERPRETAR E CUIDADOS</h3>
+
+            <p>
+                O resultado desta simulação é simplificado e considera custo
+                unitário informado; não substitui fluxo de caixa, tributos ou
+                análise de capacidade. A quantidade vendida depende de demanda,
+                concorrência e execução comercial.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- PLANILHA -->
+    <main class="planilha-container">
+
+
+        <!-- TÍTULO DA PLANILHA -->
+        <div class="titulo-planilha">
+
+            <strong>
+                EXEMPLOS PREENCHIDOS — dados fictícios para
+            </strong>
+
+            <span>
+                Células amarelas: entrada manual |
+                Células verdes: cálculo automático
+            </span>
+
+        </div>
+
+
+        <!-- TABELA -->
+        <div class="tabela-wrapper">
+
+            <table class="planilha">
+
+                <thead>
+
+                    <tr>
+
+                        <th>Produto</th>
+
+                        <th>Custo unit. (R$)</th>
+
+                        <th>Preço simulado (R$)</th>
+
+                        <th>Quantidade estimada</th>
+
+                        <th>Receita (R$)</th>
+
+                        <th>Custo estimado (R$)</th>
+
+                        <th>Resultado simplificado (R$)</th>
+
+                        <th>Margem estimada (%)</th>
+
+                        <th>Cenário</th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+                    <!-- KIT ORGANIZADOR — CONSERVADOR -->
+
+                    <tr>
+
+                        <td>Kit organizador</td>
+
+                        <td>R$ 25,00</td>
+
+                        <td>R$ 39,90</td>
+
+                        <td>30</td>
+
+                        <td class="calculo">R$ 1.197,00</td>
+
+                        <td class="calculo">R$ 750,00</td>
+
+                        <td class="calculo">R$ 447,00</td>
+
+                        <td class="calculo">37,3%</td>
+
+                        <td class="cenario conservador">Conservador</td>
+
+                    </tr>
+
+
+                    <!-- KIT ORGANIZADOR — PROVÁVEL -->
+
+                    <tr>
+
+                        <td>Kit organizador</td>
+
+                        <td>R$ 25,00</td>
+
+                        <td>R$ 45,00</td>
+
+                        <td>45</td>
+
+                        <td class="calculo">R$ 2.025,00</td>
+
+                        <td class="calculo">R$ 1.125,00</td>
+
+                        <td class="calculo">R$ 900,00</td>
+
+                        <td class="calculo">44,4%</td>
+
+                        <td class="cenario provavel">Provável</td>
+
+                    </tr>
+
+
+                    <!-- KIT ORGANIZADOR — OTIMISTA -->
+
+                    <tr>
+
+                        <td>Kit organizador</td>
+
+                        <td>R$ 25,00</td>
+
+                        <td>R$ 49,90</td>
+
+                        <td>55</td>
+
+                        <td class="calculo">R$ 2.744,50</td>
+
+                        <td class="calculo">R$ 1.375,00</td>
+
+                        <td class="calculo">R$ 1.369,50</td>
+
+                        <td class="calculo">49,9%</td>
+
+                        <td class="cenario otimista">Otimista</td>
+
+                    </tr>
+
+
+                    <!-- PRATELEIRA PEQUENA — CONSERVADOR -->
+
+                    <tr>
+
+                        <td>Prateleira pequena</td>
+
+                        <td>R$ 76,00</td>
+
+                        <td>R$ 115,00</td>
+
+                        <td>10</td>
+
+                        <td class="calculo">R$ 1.150,00</td>
+
+                        <td class="calculo">R$ 760,00</td>
+
+                        <td class="calculo">R$ 390,00</td>
+
+                        <td class="calculo">33,9%</td>
+
+                        <td class="cenario conservador">Conservador</td>
+
+                    </tr>
+
+
+                    <!-- PRATELEIRA PEQUENA — PROVÁVEL -->
+
+                    <tr>
+
+                        <td>Prateleira pequena</td>
+
+                        <td>R$ 76,00</td>
+
+                        <td>R$ 125,00</td>
+
+                        <td>15</td>
+
+                        <td class="calculo">R$ 1.875,00</td>
+
+                        <td class="calculo">R$ 1.140,00</td>
+
+                        <td class="calculo">R$ 735,00</td>
+
+                        <td class="calculo">39,2%</td>
+
+                        <td class="cenario provavel">Provável</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>

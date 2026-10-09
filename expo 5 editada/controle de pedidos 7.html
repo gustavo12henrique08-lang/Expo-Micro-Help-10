@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Acompanhamento de Pedidos</title>
+
+    <link rel="stylesheet" href="configuracao da tabelas.css">
+</head>
+
+<body>
+
+    <!-- BOTÃO VOLTAR -->
+    <button class="voltar" onclick="window.location.href='index.html'" aria-label="Voltar">
+        ←
+    </button>
+
+
+    <!-- CABEÇALHO -->
+    <header class="cabecalho">
+
+        <h1>ACOMPANHAMENTO DE PEDIDOS</h1>
+
+        <h2>OBJETIVO DA PLANILHA</h2>
+
+        <p>
+            Acompanhar cada pedido desde a entrada até a entrega,
+            reduzindo esquecimentos, atrasos e falhas de comunicação.
+        </p>
+
+    </header>
+
+
+    <!-- INSTRUÇÕES -->
+    <section class="instrucoes">
+
+        <div class="instrucao">
+
+            <h3>COMO USAR — PASSO A PASSO</h3>
+
+            <p>
+                Cadastre o número do pedido, cliente, itens, quantidades,
+                datas prometidas e status. Atualize o status quando o
+                pedido for separado, produzido, enviado ou entregue.
+                Se houver atraso, registre a nova previsão e comunique
+                o cliente.
+            </p>
+
+        </div>
+
+
+        <div class="instrucao">
+
+            <h3>COMO INTERPRETAR E CUIDADOS</h3>
+
+            <p>
+                Use uma numeração única e não apague pedidos concluídos:
+                o histórico ajuda a analisar prazos e problemas recorrentes.
+                Para pedidos com vários itens, detalhe os itens em linhas
+                separadas ou use uma referência comum ao pedido.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- PLANILHA -->
+    <main class="planilha-container">
+
+
+        <!-- TÍTULO -->
+        <div class="titulo-planilha">
+
+            <strong>
+                EXEMPLOS PREENCHIDOS — dados fictícios para
+            </strong>
+
+            <span>
+                Células amarelas: entrada manual |
+                Células verdes: cálculo automático
+            </span>
+
+        </div>
+
+
+        <!-- TABELA -->
+        <div class="tabela-wrapper">
+
+            <table class="planilha">
+
+                <thead>
+
+                    <tr>
+
+                        <th>Nº pedido</th>
+
+                        <th>Data do pedido</th>
+
+                        <th>Cliente</th>
+
+                        <th>Produto</th>
+
+                        <th>Quantidade</th>
+
+                        <th>Status</th>
+
+                        <th>Previsão entrega</th>
+
+                        <th>Entrega realizada</th>
+
+                        <th>Responsável</th>
+
+                        <th>Observações</th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+                    <!-- PEDIDO P-201 -->
+
+                    <tr>
+
+                        <td>P-201</td>
+
+                        <td>02/10/2026</td>
+
+                        <td>Marina Lopes</td>
+
+                        <td>Kit organizador</td>
+
+                        <td>2</td>
+
+                        <td class="status-entregue">Entregue</td>
+
+                        <td>03/10/2026</td>
+
+                        <td class="calculo">03/10/2026</td>
+
+                        <td>Expedição</td>
+
+                        <td>Entregue no balcão</td>
+
+                    </tr>
+
+
+                    <!-- PEDIDO P-202 -->
+
+                    <tr>
+
+                        <td>P-202</td>
+
+                        <td>02/10/2026</td>
+
+                        <td>Mercadinho Sol</td>
+
+                        <td>Caixa organizadora</td>
+
+                        <td>10</td>
+
+                        <td>Separação</td>
+
+                        <td>08/10/2026</td>
+
+                        <td></td>
+
+                        <td>Estoque</td>
+
+                        <td>Conferir 10 unidades</td>
+
+                    </tr>
+
+
+                    <!-- PEDIDO P-203 -->
+
+                    <tr>
+
+                        <td>P-203</td>
+
+                        <td>03/10/2026</td>
+
+                        <td>Rafael Costa</td>
+
+                        <td>Prateleira pequena</td>
+
+                        <td>1</td>
+
+                        <td class="status-entregue">Entregue</td>
+
+                        <td>04/10/2026</td>
+
+                        <td class="calculo">04/10/2026</td>
+
+                        <td>Expedição</td>
+
+                        <td>Cliente retirou</td>
+
+                    </tr>
+
+
+                    <!-- PEDIDO P-204 -->
+
+                    <tr>
+
+                        <td>P-204</td>
+
+                        <td>04/10/2026</td>
+
+                        <td>Ana Ribeiro</td>
+
+                        <td>Organizador multiuso</td>
+
+                        <td>3</td>
+
+                        <td>Em preparação</td>
+
+                        <td>09/10/2026</td>
+
+                        <td></td>
+
+                        <td>Operação</td>
+
+                        <td>Embalar individualmente</td>
+
+                    </tr>
+
+
+                    <!-- PEDIDO P-205 -->
+
+                    <tr>
+
+                        <td>P-205</td>
+
+                        <td>05/10/2026</td>
+
+                        <td>Carlos Mendes</td>
+
+                        <td>Caixa organizadora</td>
+
+                        <td>4</td>
+
+                        <td>Aguardando pagamento</td>
+
+                        <td>10/10/2026</td>
+
+                        <td></td>
+
+                        <td>Comercial</td>
+
+                        <td>Confirmar pagamento</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>

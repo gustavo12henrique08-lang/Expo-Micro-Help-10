@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Controle de Gastos e Despesas</title>
+
+    <link rel="stylesheet" href="configuracao da tabelas.css">
+</head>
+
+<body>
+
+    <!-- BOTÃO VOLTAR -->
+    <button class="voltar" onclick="window.location.href='index.html'" aria-label="Voltar">
+        ←
+    </button>
+
+
+    <!-- CABEÇALHO -->
+    <header class="cabecalho">
+
+        <h1>CONTROLE DE GASTOS E DESPESAS</h1>
+
+        <h2>OBJETIVO DA PLANILHA</h2>
+
+        <p>
+            Registrar os gastos operacionais para saber para onde o dinheiro
+            está indo e separar despesas fixas de gastos que variam conforme
+            as vendas.
+        </p>
+
+    </header>
+
+
+    <!-- INSTRUÇÕES -->
+    <section class="instrucoes">
+
+        <div class="instrucao">
+
+            <h3>COMO USAR — PASSO A PASSO</h3>
+
+            <p>
+                Preencha data, descrição, categoria, tipo, forma de pagamento
+                e valor total. Guarde comprovantes e use categorias consistentes.
+                No fechamento mensal, some por categoria e compare com o mês anterior.
+            </p>
+
+        </div>
+
+
+        <div class="instrucao">
+
+            <h3>COMO INTERPRETAR E CUIDADOS</h3>
+
+            <p>
+                Despesas pequenas e frequentes também afetam o resultado.
+                Separe gastos da empresa dos gastos pessoais. Se houver retirada
+                do proprietário, registre em categoria própria conforme orientação contábil.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- PLANILHA -->
+    <main class="planilha-container">
+
+
+        <!-- TÍTULO -->
+        <div class="titulo-planilha">
+
+            <strong>
+                EXEMPLOS PREENCHIDOS — dados fictícios para
+            </strong>
+
+            <span>
+                Células amarelas: entrada manual |
+                Células verdes: cálculo automático
+            </span>
+
+        </div>
+
+
+        <!-- TABELA -->
+        <div class="tabela-wrapper">
+
+            <table class="planilha">
+
+                <thead>
+
+                    <tr>
+
+                        <th>Data</th>
+
+                        <th>Despesa</th>
+
+                        <th>Categoria</th>
+
+                        <th>Classificação</th>
+
+                        <th>Frequência</th>
+
+                        <th>Valor (R$)</th>
+
+                        <th>Pagamento</th>
+
+                        <th>Responsável</th>
+
+                        <th>Comprovante?</th>
+
+                        <th>Observações</th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+                    <!-- LINHA 1 -->
+
+                    <tr>
+
+                        <td>01/10/2026</td>
+
+                        <td>Aluguel</td>
+
+                        <td>Ocupação</td>
+
+                        <td>Fixo</td>
+
+                        <td>Mensal</td>
+
+                        <td>R$ 950,00</td>
+
+                        <td>Transferência</td>
+
+                        <td>Gestor</td>
+
+                        <td>Sim</td>
+
+                        <td>Contrato comercial</td>
+
+                    </tr>
+
+
+                    <!-- LINHA 2 -->
+
+                    <tr>
+
+                        <td>02/10/2026</td>
+
+                        <td>Internet</td>
+
+                        <td>Serviços</td>
+
+                        <td>Fixo</td>
+
+                        <td>Mensal</td>
+
+                        <td>R$ 120,00</td>
+
+                        <td>Débito automático</td>
+
+                        <td>Gestor</td>
+
+                        <td>Sim</td>
+
+                        <td>Plano empresarial</td>
+
+                    </tr>
+
+
+                    <!-- LINHA 3 -->
+
+                    <tr>
+
+                        <td>03/10/2026</td>
+
+                        <td>Embalagens</td>
+
+                        <td>Mercadorias</td>
+
+                        <td>Variável</td>
+
+                        <td>Conforme uso</td>
+
+                        <td>R$ 185,00</td>
+
+                        <td>Pix</td>
+
+                        <td>Compras</td>
+
+                        <td>Sim</td>
+
+                        <td>Para pedidos da semana</td>
+
+                    </tr>
+
+
+                    <!-- LINHA 4 -->
+
+                    <tr>
+
+                        <td>04/10/2026</td>
+
+                        <td>Entrega por motoboy</td>
+
+                        <td>Logística</td>
+
+                        <td>Variável</td>
+
+                        <td>Por pedido</td>
+
+                        <td>R$ 68,00</td>
+
+                        <td>Pix</td>
+
+                        <td>Operação</td>
+
+                        <td>Sim</td>
+
+                        <td>6 entregas</td>
+
+                    </tr>
+
+
+                    <!-- LINHA 5 -->
+
+                    <tr>
+
+                        <td>05/10/2026</td>
+
+                        <td>Material de limpeza</td>
+
+                        <td>Manutenção</td>
+
+                        <td>Variável</td>
+
+                        <td>Mensal</td>
+
+                        <td>R$ 47,50</td>
+
+                        <td>Débito</td>
+
+                        <td>Operação</td>
+
+                        <td>Sim</td>
+
+                        <td>Reposição</td>
+
+                    </tr>
+
+
+                    <!-- LINHA 6 -->
+
+                    <tr>
+
+                        <td>06/10/2026</td>
+
+                        <td>Energia elétrica</td>
+
+                        <td>Utilidades</td>
+
+                        <td>Fixo</td>
+
+                        <td>Mensal</td>
+
+                        <td>R$ 240,00</td>
+
+                        <td>Boleto</td>
+
+                        <td>Gestor</td>
+
+                        <td>Não</td>
+
+                        <td>Aguardar fatura final</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>

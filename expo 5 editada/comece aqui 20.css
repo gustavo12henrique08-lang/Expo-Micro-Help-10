@@ -1,0 +1,448 @@
+/* =========================================
+   CONFIGURAÇÕES GERAIS
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.voltar {
+
+    position: fixed;
+
+    top: 15px;
+    left: 15px;
+
+    width: 38px;
+    height: 38px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: var(--azul-marinho);
+
+    color: white;
+
+    font-size: 28px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    z-index: 1000;
+
+    transition: 0.25s ease;
+}
+
+
+.voltar:hover {
+
+    background: var(--azul-vivo);
+
+    transform: translateX(-4px);
+}
+
+
+:root {
+
+    --azul-marinho: #080d52;
+
+    --azul-vivo: #075cff;
+
+    --azul-claro: #dcebf7;
+
+    --azul-claro-hover: #cfe3f3;
+
+    --texto: #10131c;
+
+    --cinza: #667085;
+
+    --branco: #ffffff;
+
+    --borda: #080d52;
+
+    --alerta: #fce4d6;
+}
+
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #ffffff;
+
+    color: var(--texto);
+
+    padding: 0 3%;
+}
+
+
+/* =========================================
+   CABEÇALHO
+========================================= */
+
+.cabecalho {
+
+    margin-top: 5px;
+
+    margin-bottom: 18px;
+}
+
+
+.cabecalho h1 {
+
+    background: var(--azul-marinho);
+
+    color: var(--branco);
+
+    font-size: 24px;
+
+    padding: 7px 10px;
+
+    margin-bottom: 14px;
+}
+
+
+.cabecalho .subtitulo {
+
+    color: var(--azul-marinho);
+
+    font-size: 10px;
+
+    margin-bottom: 3px;
+}
+
+
+.cabecalho p {
+
+    color: var(--cinza);
+
+    font-size: 10px;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================
+   CONTEÚDO
+========================================= */
+
+.conteudo {
+
+    width: 100%;
+}
+
+
+/* =========================================
+   SEÇÕES
+========================================= */
+
+.secao {
+
+    width: 100%;
+
+    margin-bottom: 14px;
+}
+
+
+.titulo-secao {
+
+    color: var(--azul-marinho);
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    margin-bottom: 0;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================
+   ROTEIRO
+========================================= */
+
+.roteiro {
+
+    width: 100%;
+
+    border: 1px solid var(--borda);
+}
+
+
+.linha {
+
+    display: grid;
+
+    grid-template-columns: 130px 1fr;
+
+    min-height: 37px;
+
+    border-bottom: 1px solid var(--borda);
+}
+
+
+.linha:last-child {
+
+    border-bottom: none;
+}
+
+
+/* =========================================
+   NÚMERO / ETAPA
+========================================= */
+
+.etapa {
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 5px 7px;
+
+    background: var(--azul-claro);
+
+    border-right: 1px solid var(--borda);
+
+    color: var(--azul-marinho);
+
+    font-size: 10px;
+
+    font-weight: bold;
+}
+
+
+/* =========================================
+   DESCRIÇÃO
+========================================= */
+
+.descricao {
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 5px 8px;
+
+    background: var(--branco);
+
+    color: var(--texto);
+
+    font-size: 10px;
+
+    line-height: 1.35;
+}
+
+
+/* =========================================
+   HOVER DO ROTEIRO
+========================================= */
+
+.linha:hover .etapa {
+
+    background: var(--azul-claro-hover);
+}
+
+
+.linha:hover .descricao {
+
+    background: #fafcff;
+}
+
+
+/* =========================================
+   ABAS INCLUÍDAS
+========================================= */
+
+.abas {
+
+    margin-top: 12px;
+}
+
+
+.abas-tabela {
+
+    width: 100%;
+
+    border: 1px solid var(--borda);
+}
+
+
+.aba-linha {
+
+    display: grid;
+
+    grid-template-columns: 130px 1fr;
+
+    min-height: 19px;
+
+    border-bottom: 1px solid var(--borda);
+}
+
+
+.aba-linha:last-child {
+
+    border-bottom: none;
+}
+
+
+/* =========================================
+   CATEGORIA
+========================================= */
+
+.categoria {
+
+    padding: 2px 5px;
+
+    background: var(--azul-claro);
+
+    color: var(--azul-marinho);
+
+    border-right: 1px solid var(--borda);
+
+    font-size: 10px;
+
+    font-weight: bold;
+}
+
+
+/* =========================================
+   ITENS
+========================================= */
+
+.itens {
+
+    padding: 2px 5px;
+
+    background: var(--branco);
+
+    color: var(--texto);
+
+    font-size: 10px;
+
+    line-height: 1.25;
+}
+
+
+/* =========================================
+   HOVER DAS ABAS
+========================================= */
+
+.aba-linha:hover .categoria {
+
+    background: var(--azul-claro-hover);
+}
+
+
+.aba-linha:hover .itens {
+
+    background: #fafcff;
+}
+
+
+/* =========================================
+   AVISO IMPORTANTE
+========================================= */
+
+.aviso {
+
+    margin-top: 30px;
+
+    width: 100%;
+
+    min-height: 56px;
+
+    padding: 9px 10px;
+
+    border: 2px solid var(--azul-marinho);
+
+    background: var(--alerta);
+
+    color: var(--texto);
+
+    font-size: 11px;
+
+    line-height: 1.45;
+}
+
+
+.aviso strong {
+
+    color: var(--azul-marinho);
+}
+
+
+/* =========================================
+   RESPONSIVIDADE
+========================================= */
+
+@media (max-width: 768px) {
+
+    body {
+
+        padding: 0 12px;
+    }
+
+
+    .cabecalho {
+
+        margin-top: 15px;
+
+        margin-bottom: 22px;
+    }
+
+
+    .cabecalho h1 {
+
+        font-size: 18px;
+
+        padding: 9px;
+    }
+
+
+    .cabecalho .subtitulo {
+
+        font-size: 9px;
+    }
+
+
+    .cabecalho p {
+
+        font-size: 10px;
+    }
+
+
+    .roteiro,
+    .abas-tabela {
+
+        overflow-x: auto;
+    }
+
+
+    .linha {
+
+        grid-template-columns: 130px minmax(550px, 1fr);
+
+        min-width: 680px;
+    }
+
+
+    .aba-linha {
+
+        grid-template-columns: 130px minmax(550px, 1fr);
+
+        min-width: 680px;
+    }
+
+
+    .aviso {
+
+        font-size: 10px;
+
+        margin-top: 25px;
+    }
+
+}

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fluxo de Caixa Diário</title>
+
+    <link rel="stylesheet" href="configuracao da tabelas.css">
+</head>
+
+<body>
+
+    <!-- BOTÃO VOLTAR -->
+    <button class="voltar" onclick="window.location.href='index.html'" aria-label="Voltar">
+        ←
+    </button>
+
+
+    <!-- CABEÇALHO -->
+    <header class="cabecalho">
+
+        <h1>FLUXO DE CAIXA DIÁRIO</h1>
+
+        <h2>OBJETIVO DA PLANILHA</h2>
+
+        <p>
+            Mostrar quanto dinheiro entrou e saiu e qual foi o efeito no caixa.
+            A planilha deve refletir movimentações efetivas e também pode ser
+            usada para projetar recebimentos e pagamentos futuros.
+        </p>
+
+    </header>
+
+
+    <!-- INSTRUÇÕES -->
+    <section class="instrucoes">
+
+        <div class="instrucao">
+
+            <h3>COMO USAR — PASSO A PASSO</h3>
+
+            <p>
+                1) Informe a data e uma descrição que permita reconhecer o movimento.
+                2) Classifique por categoria.
+                3) Marque Entrada ou Saída.
+                4) Preencha somente o valor correspondente.
+                5) Confira o saldo e compare com banco/caixa.
+                Atualize diariamente ou após cada movimento.
+            </p>
+
+        </div>
+
+
+        <div class="instrucao">
+
+            <h3>COMO INTERPRETAR E CUIDADOS</h3>
+
+            <p>
+                Saldo positivo não significa necessariamente lucro: pode haver
+                vendas ainda não recebidas ou contas futuras. Use a mesma
+                categoria ao longo do tempo e não registre o mesmo pagamento
+                duas vezes.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- PLANILHA -->
+    <main class="planilha-container">
+
+
+        <!-- TÍTULO DA PLANILHA -->
+        <div class="titulo-planilha">
+
+            <strong>
+                EXEMPLOS PREENCHIDOS — dados fictícios para
+            </strong>
+
+            <span>
+                Células amarelas: entrada manual |
+                Células verdes: cálculo automático
+            </span>
+
+        </div>
+
+
+        <!-- TABELA -->
+        <div class="tabela-wrapper">
+
+            <table class="planilha">
+
+                <thead>
+
+                    <tr>
+
+                        <th>Data</th>
+
+                        <th>Descrição</th>
+
+                        <th>Categoria</th>
+
+                        <th>Tipo</th>
+
+                        <th>Entrada (R$)</th>
+
+                        <th>Saída (R$)</th>
+
+                        <th>Variação (R$)</th>
+
+                        <th>Saldo acumulado (R$)</th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+                    <!-- LINHA 1 -->
+
+                    <tr>
+
+                        <td>01/10/2026</td>
+
+                        <td>Saldo inicial do período</td>
+
+                        <td>Saldo inicial</td>
+
+                        <td>Entrada</td>
+
+                        <td>R$ 2.500,00</td>
+
+                        <td>R$ 0,00</td>
+
+                        <td class="calculo">R$ 2.500,00</td>
+
+                        <td class="calculo">R$ 2.500,00</td>
+
+                    </tr>
+
+
+                    <!-- LINHA 2 -->
+
+                    <tr>
+
+                        <td>01/10/2026</td>
+
+                        <td>Venda balcão — Pix</td>
+
+                        <td>Vendas</td>
+
+                        <td>Entrada</td>
+
+                        <td>R$ 850,00</td>
+
+                        <td>R$ 0,00</td>
+
+                        <td class="calculo">R$ 850,00</td>
+
+                        <td class="calculo">R$ 3.350,00</td>
+
+                    </tr>
+
+
+                    <!-- LINHA 3 -->
+
+                    <tr>
+
+                        <td>02/10/2026</td>
+
+                        <td>Compra de embalagens</td>
+
+                        <td>Fornecedores</td>
+
+                        <td>Saída</td>
+
+                        <td>R$ 0,00</td>
+
+                        <td>R$ 185,00</td>
+
+                        <td class="calculo">-R$ 185,00</td>
+
+                        <td class="calculo">R$ 3.165,00</td>
+
+                    </tr>
+
+
+                    <!-- LINHA 4 -->
+
+                    <tr>
+
+                        <td>03/10/2026</td>
+
+                        <td>Conta de internet</td>
+
+                        <td>Despesas fixas</td>
+
+                        <td>Saída</td>
+
+                        <td>R$ 0,00</td>
+
+                        <td>R$ 120,00</td>
+
+                        <td class="calculo">-R$ 120,00</td>
+
+                        <td class="calculo">R$ 3.045,00</td>
+
+                    </tr>
+
+
+                    <!-- LINHA 5 -->
+
+                    <tr>
+
+                        <td>04/10/2026</td>
+
+                        <td>Recebimento pedido V-104</td>
+
+                        <td>Clientes</td>
+
+                        <td>Entrada</td>
+
+                        <td>R$ 620,00</td>
+
+                        <td>R$ 0,00</td>
+
+                        <td class="calculo">R$ 620,00</td>
+
+                        <td class="calculo">R$ 3.665,00</td>
+
+                    </tr>
+
+
+                    <!-- LINHA 6 -->
+
+                    <tr>
+
+                        <td>05/10/2026</td>
+
+                        <td>Aluguel do ponto</td>
+
+                        <td>Ocupação</td>
+
+                        <td>Saída</td>
+
+                        <td>R$ 0,00</td>
+
+                        <td>R$ 950,00</td>
+
+                        <td class="calculo">-R$ 950,00</td>
+
+                        <td class="calculo">R$ 2.715,00</td>
+
+                    </tr>
+
+
+                    <!-- LINHA 7 -->
+
+                    <tr>
+
+                        <td>06/10/2026</td>
+
+                        <td>Venda pelo WhatsApp</td>
+
+                        <td>Vendas</td>
+
+                        <td>Entrada</td>
+
+                        <td>R$ 430,00</td>
+
+                        <td>R$ 0,00</td>
+
+                        <td class="calculo">R$ 430,00</td>
+
+                        <td class="calculo">R$ 3.145,00</td>
+
+                    </tr>
+
+
+                    <!-- LINHA 8 -->
+
+                    <tr>
+
+                        <td>07/10/2026</td>
+
+                        <td>Pagamento fornecedor</td>
+
+                        <td>Fornecedores</td>
+
+                        <td>Saída</td>
+
+                        <td>R$ 0,00</td>
+
+                        <td>R$ 380,00</td>
+
+                        <td class="calculo">-R$ 380,00</td>
+
+                        <td class="calculo">R$ 2.765,00</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contas a Pagar e Vencimentos</title>
+
+    <link rel="stylesheet" href="configuracao da tabelas.css">
+</head>
+
+<body>
+
+    <!-- BOTÃO VOLTAR -->
+    <button class="voltar" onclick="location.href='index.html'" aria-label="Voltar">
+        ←
+    </button>
+
+
+    <!-- CABEÇALHO -->
+    <header class="cabecalho">
+        <h1>CONTAS A PAGAR E VENCIMENTOS</h1>
+
+        <h2>OBJETIVO DA PLANILHA</h2>
+
+        <p>
+            Organizar compromissos financeiros da empresa por fornecedor,
+            data de vencimento e situação. Ajuda a planejar o caixa e evitar
+            juros, multas e interrupção de fornecimento.
+        </p>
+    </header>
+
+
+    <!-- INSTRUÇÕES -->
+    <section class="instrucoes">
+
+        <div class="instrucao">
+            <h3>COMO USAR — PASSO A PASSO</h3>
+
+            <p>
+                Cadastre uma obrigação por linha. Informe valor total,
+                vencimento e forma de pagamento prevista. Quando pagar,
+                altere o status para Pago e preencha a data real.
+                Revise primeiro as contas vencidas e as que vencem nos
+                próximos sete dias.
+            </p>
+        </div>
+
+
+        <div class="instrucao">
+            <h3>COMO INTERPRETAR E CUIDADOS</h3>
+
+            <p>
+                Não marque como pago antes de confirmar a saída do dinheiro.
+                Uma conta parcelada deve ter uma linha por parcela.
+                Os exemplos são fictícios e os vencimentos devem ser
+                ajustados ao seu calendário real.
+            </p>
+        </div>
+
+    </section>
+
+
+    <!-- PLANILHA -->
+    <main class="planilha-container">
+
+        <div class="titulo-planilha">
+            <strong>
+                EXEMPLOS PREENCHIDOS — 
+            </strong>
+
+            <span>
+                Células amarelas: entrada manual |
+                Células verdes: cálculo automático
+            </span>
+
+            <small>
+                dados fictícios para
+            </small>
+        </div>
+
+
+        <div class="tabela-wrapper">
+
+            <table class="planilha">
+
+                <thead>
+                    <tr>
+                        <th>Fornecedor</th>
+                        <th>Descrição</th>
+                        <th>Categoria</th>
+                        <th>Emissão</th>
+                        <th>Vencimento</th>
+                        <th>Valor (R$)</th>
+                        <th>Status</th>
+                        <th>Pagamento em</th>
+                        <th>Prioridade</th>
+                        <th>Observações</th>
+                    </tr>
+                </thead>
+
+
+                <tbody>
+
+                    <tr>
+                        <td>Distribuidora Alfa</td>
+                        <td>Mercadorias — NF 231</td>
+                        <td>Estoque</td>
+                        <td>01/10/2026</td>
+                        <td>10/10/2026</td>
+                        <td>R$ 780,00</td>
+                        <td>Pendente</td>
+                        <td></td>
+                        <td>Alta</td>
+                        <td>Compra para reposição</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>Internet Fibra</td>
+                        <td>Plano empresarial</td>
+                        <td>Serviços</td>
+                        <td>01/10/2026</td>
+                        <td>12/10/2026</td>
+                        <td>R$ 120,00</td>
+                        <td>Pendente</td>
+                        <td></td>
+                        <td>Média</td>
+                        <td>Despesa recorrente</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>Imobiliária Central</td>
+                        <td>Aluguel outubro</td>
+                        <td>Ocupação</td>
+                        <td>01/10/2026</td>
+                        <td>05/10/2026</td>
+                        <td>R$ 950,00</td>
+                        <td class="status-pago">Pago</td>
+                        <td>05/10/2026</td>
+                        <td>Alta</td>
+                        <td>Exemplo já quitado</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>Embalagens Brasil</td>
+                        <td>Caixas e sacolas</td>
+                        <td>Estoque</td>
+                        <td>02/10/2026</td>
+                        <td>15/10/2026</td>
+                        <td>R$ 185,00</td>
+                        <td>Pendente</td>
+                        <td></td>
+                        <td>Média</td>
+                        <td>Confirmar recebimento</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>Contabilidade Lima</td>
+                        <td>Honorários mensais</td>
+                        <td>Serviços</td>
+                        <td>01/10/2026</td>
+                        <td>20/10/2026</td>
+                        <td>R$ 350,00</td>
+                        <td>Pendente</td>
+                        <td></td>
+                        <td>Alta</td>
+                        <td>Solicitar nota fiscal</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>Energia Elétrica</td>
+                        <td>Conta da loja</td>
+                        <td>Utilidades</td>
+                        <td>04/10/2026</td>
+                        <td>18/10/2026</td>
+                        <td>R$ 240,00</td>
+                        <td>Pendente</td>
+                        <td></td>
+                        <td>Alta</td>
+                        <td>Valor estimado</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </main>
+
+</body>
+</html>

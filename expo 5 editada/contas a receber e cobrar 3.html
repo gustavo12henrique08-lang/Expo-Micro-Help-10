@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contas a Receber e Cobrança</title>
+
+    <link rel="stylesheet" href="configuracao da tabelas.css">
+</head>
+
+<body>
+
+    <!-- BOTÃO VOLTAR -->
+    <button class="voltar" onclick="window.location.href='index.html'" aria-label="Voltar">
+        ←
+    </button>
+
+
+    <!-- CABEÇALHO -->
+    <header class="cabecalho">
+
+        <h1>CONTAS A RECEBER E COBRANÇA</h1>
+
+        <h2>OBJETIVO DA PLANILHA</h2>
+
+        <p>
+            Controlar valores a receber de vendas a prazo, serviços,
+            parcelas e outros compromissos dos clientes. Ajuda a
+            identificar atrasos e estimar quando o dinheiro entrará.
+        </p>
+
+    </header>
+
+
+    <!-- INSTRUÇÕES -->
+    <section class="instrucoes">
+
+        <div class="instrucao">
+
+            <h3>COMO USAR — PASSO A PASSO</h3>
+
+            <p>
+                Registre cliente, documento ou venda relacionada,
+                vencimento, valor e status. Quando receber, preencha
+                a data do recebimento. Para parcelas, use uma linha
+                por parcela. Faça contato respeitoso antes ou logo
+                após o vencimento.
+            </p>
+
+        </div>
+
+
+        <div class="instrucao">
+
+            <h3>COMO INTERPRETAR E CUIDADOS</h3>
+
+            <p>
+                Venda faturada não é a mesma coisa que dinheiro disponível.
+                Compare esta planilha com extratos e comprovantes. Evite
+                expor dados financeiros de clientes a pessoas sem
+                necessidade de acesso.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- PLANILHA -->
+    <main class="planilha-container">
+
+
+        <!-- TÍTULO DA TABELA -->
+        <div class="titulo-planilha">
+
+            <strong>
+                EXEMPLOS PREENCHIDOS — dados fictícios para
+            </strong>
+
+            <span>
+                Células amarelas: entrada manual |
+                Células verdes: cálculo automático
+            </span>
+
+        </div>
+
+
+        <!-- TABELA -->
+        <div class="tabela-wrapper">
+
+            <table class="planilha">
+
+                <thead>
+
+                    <tr>
+
+                        <th>Cliente</th>
+
+                        <th>Documento/Venda</th>
+
+                        <th>Emissão</th>
+
+                        <th>Vencimento</th>
+
+                        <th>Valor (R$)</th>
+
+                        <th>Status</th>
+
+                        <th>Recebido em</th>
+
+                        <th>Canal de cobrança</th>
+
+                        <th>Dias até vencimento</th>
+
+                        <th>Observações</th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+                    <tr>
+
+                        <td>Mercadinho Sol</td>
+
+                        <td>V-104 / parcela única</td>
+
+                        <td>01/10/2026</td>
+
+                        <td>04/10/2026</td>
+
+                        <td>R$ 620,00</td>
+
+                        <td class="status-pago">Recebido</td>
+
+                        <td>04/10/2026</td>
+
+                        <td>WhatsApp</td>
+
+                        <td class="calculo">02/01/1900</td>
+
+                        <td>Pago por Pix</td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>Ana Ribeiro</td>
+
+                        <td>V-108 / 1 de 2</td>
+
+                        <td>02/10/2026</td>
+
+                        <td>12/10/2026</td>
+
+                        <td>R$ 180,00</td>
+
+                        <td>Pendente</td>
+
+                        <td></td>
+
+                        <td>WhatsApp</td>
+
+                        <td class="calculo">10/01/1900</td>
+
+                        <td>Segunda parcela em aberto</td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>Oficina Horizonte</td>
+
+                        <td>OS-045</td>
+
+                        <td>03/10/2026</td>
+
+                        <td>15/10/2026</td>
+
+                        <td>R$ 940,00</td>
+
+                        <td>Pendente</td>
+
+                        <td></td>
+
+                        <td>E-mail</td>
+
+                        <td class="calculo">12/01/1900</td>
+
+                        <td>Enviar segunda via se necessário</td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>Carlos Mendes</td>
+
+                        <td>V-111</td>
+
+                        <td>04/10/2026</td>
+
+                        <td>07/10/2026</td>
+
+                        <td>R$ 260,00</td>
+
+                        <td class="status-atrasado">Atrasado</td>
+
+                        <td></td>
+
+                        <td>Telefone</td>
+
+                        <td class="calculo">######</td>
+
+                        <td>Contato cordial pendente</td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>Café do Bairro</td>
+
+                        <td>V-115</td>
+
+                        <td>05/10/2026</td>
+
+                        <td>20/10/2026</td>
+
+                        <td>R$ 510,00</td>
+
+                        <td>Pendente</td>
+
+                        <td></td>
+
+                        <td>E-mail</td>
+
+                        <td class="calculo">15/01/1900</td>
+
+                        <td>Cliente recorrente</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </main>
+
+
+</body>
+
+</html>

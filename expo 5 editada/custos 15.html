@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mapa de Custos Diretos e Indiretos</title>
+
+    <link rel="stylesheet" href="configuracao da tabelas.css">
+</head>
+
+<body>
+
+    <!-- BOTÃO VOLTAR -->
+    <button class="voltar"
+        onclick="window.location.href='index.html'"
+        aria-label="Voltar">
+        ←
+    </button>
+
+
+    <!-- CABEÇALHO -->
+    <header class="cabecalho">
+
+        <h1>MAPA DE CUSTOS DIRETOS E INDIRETOS</h1>
+
+        <h2>OBJETIVO DA PLANILHA</h2>
+
+        <p>
+            Identificar os recursos consumidos para produzir ou entregar
+            um produto/serviço. A classificação correta apoia o orçamento,
+            a precificação e a análise de desperdícios.
+        </p>
+
+    </header>
+
+
+    <!-- INSTRUÇÕES -->
+    <section class="instrucoes">
+
+        <div class="instrucao">
+
+            <h3>COMO USAR — PASSO A PASSO</h3>
+
+            <p>
+                Liste cada item, classifique como direto/indireto e
+                fixo/variável, informe a quantidade consumida e o custo
+                unitário. O custo total da linha é calculado pela
+                quantidade multiplicada pelo custo unitário. Distribua
+                custos indiretos com um critério consistente.
+            </p>
+
+        </div>
+
+
+        <div class="instrucao">
+
+            <h3>COMO INTERPRETAR E CUIDADOS</h3>
+
+            <p>
+                Custo direto pode ser ligado ao produto com facilidade,
+                como embalagem usada em cada unidade. Custos indiretos,
+                como aluguel, precisam de critério de rateio. A
+                classificação pode variar conforme o modelo de negócio.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- PLANILHA -->
+    <main class="planilha-container">
+
+
+        <!-- TÍTULO -->
+        <div class="titulo-planilha">
+
+            <strong>
+                EXEMPLOS PREENCHIDOS — dados fictícios para
+            </strong>
+
+            <span>
+                Células amarelas: entrada manual |
+                Células verdes: cálculo automático
+            </span>
+
+        </div>
+
+
+        <!-- TABELA -->
+        <div class="tabela-wrapper">
+
+            <table class="planilha">
+
+                <thead>
+
+                    <tr>
+
+                        <th>Item</th>
+
+                        <th>Direto/indireto</th>
+
+                        <th>Fixo/variável</th>
+
+                        <th>Unidade</th>
+
+                        <th>Quantidade</th>
+
+                        <th>Custo unit. (R$)</th>
+
+                        <th>Custo total (R$)</th>
+
+                        <th>Produto/área</th>
+
+                        <th>Observações</th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+
+                    <!-- PLÁSTICO E ACESSÓRIOS -->
+
+                    <tr>
+
+                        <td>Plástico e acessórios</td>
+
+                        <td>Direto</td>
+
+                        <td>Variável</td>
+
+                        <td>kit</td>
+
+                        <td>1</td>
+
+                        <td>R$ 12,00</td>
+
+                        <td class="calculo">R$ 12,00</td>
+
+                        <td>Kit organizador</td>
+
+                        <td>Matéria-prima</td>
+
+                    </tr>
+
+
+                    <!-- EMBALAGEM -->
+
+                    <tr>
+
+                        <td>Embalagem</td>
+
+                        <td>Direto</td>
+
+                        <td>Variável</td>
+
+                        <td>unidade</td>
+
+                        <td>1</td>
+
+                        <td>R$ 2,50</td>
+
+                        <td class="calculo">R$ 2,50</td>
+
+                        <td>Kit organizador</td>
+
+                        <td>Embalagem final</td>
+
+                    </tr>
+
+
+                    <!-- MÃO DE OBRA -->
+
+                    <tr>
+
+                        <td>Mão de obra direta</td>
+
+                        <td>Direto</td>
+
+                        <td>Variável</td>
+
+                        <td>hora</td>
+
+                        <td>0,25</td>
+
+                        <td>R$ 30,00</td>
+
+                        <td class="calculo">R$ 7,50</td>
+
+                        <td>Kit organizador</td>
+
+                        <td>Tempo estimado</td>
+
+                    </tr>
+
+
+                    <!-- ALUGUEL -->
+
+                    <tr>
+
+                        <td>Aluguel</td>
+
+                        <td>Indireto</td>
+
+                        <td>Fixo</td>
+
+                        <td>mês</td>
+
+                        <td>1</td>
+
+                        <td>R$ 950,00</td>
+
+                        <td class="calculo">R$ 950,00</td>
+
+                        <td>Operação</td>
+
+                        <td>Ratear por critério</td>
+
+                    </tr>
+
+
+                    <!-- INTERNET -->
+
+                    <tr>
+
+                        <td>Internet</td>
+
+                        <td>Indireto</td>
+
+                        <td>Fixo</td>
+
+                        <td>mês</td>
+
+                        <td>1</td>
+
+                        <td>R$ 120,00</td>
+
+                        <td class="calculo">R$ 120,00</td>
+
+                        <td>Administração</td>
+
+                        <td>Rateio entre áreas</td>
+
+                    </tr>
+
+
+                    <!-- FRETE -->
+
+                    <tr>
+
+                        <td>Frete de compra</td>
+
+                        <td>Indireto</td>
+
+                        <td>Variável</td>
+
+                        <td>lote</td>
+
+                        <td>1</td>
+
+                        <td>R$ 68,00</td>
+
+                        <td class="calculo">R$ 68,00</td>
+
+                        <td>Estoque</td>
+
+                        <td>Distribuir por item</td>
+
+                    </tr>
+
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </main>
+
+
+</body>
+
+</html>

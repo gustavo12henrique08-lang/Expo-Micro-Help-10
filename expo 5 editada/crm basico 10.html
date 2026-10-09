@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CRM — Funil de Vendas</title>
+
+    <link rel="stylesheet" href="configuracao da tabelas.css">
+</head>
+
+<body>
+
+    <!-- BOTÃO VOLTAR -->
+    <button class="voltar" onclick="window.location.href='index.html'" aria-label="Voltar">
+        ←
+    </button>
+
+
+    <!-- CABEÇALHO -->
+    <header class="cabecalho">
+
+        <h1>CRM — FUNIL DE VENDAS</h1>
+
+        <h2>OBJETIVO DA PLANILHA</h2>
+
+        <p>
+            Organizar potenciais clientes e oportunidades, mostrando em que
+            etapa cada negociação está e qual é o próximo contato previsto.
+        </p>
+
+    </header>
+
+
+    <!-- INSTRUÇÕES -->
+    <section class="instrucoes">
+
+        <div class="instrucao">
+
+            <h3>COMO USAR — PASSO A PASSO</h3>
+
+            <p>
+                Registre a origem do contato, necessidade, valor estimado e
+                etapa. Toda oportunidade ativa deve ter uma próxima ação e
+                data de retorno. Atualize para Ganho ou Perdido quando a
+                negociação terminar e anote o motivo.
+            </p>
+
+        </div>
+
+
+        <div class="instrucao">
+
+            <h3>COMO INTERPRETAR E CUIDADOS</h3>
+
+            <p>
+                Não avalie o desempenho apenas pela quantidade de contatos:
+                acompanhe quantas oportunidades avançam, quanto tempo demoram
+                e por que são perdidas. Use somente dados necessários para a
+                relação comercial.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- PLANILHA -->
+    <main class="planilha-container">
+
+
+        <!-- TÍTULO DA PLANILHA -->
+        <div class="titulo-planilha">
+
+            <strong>
+                EXEMPLOS PREENCHIDOS — dados fictícios para
+            </strong>
+
+            <span>
+                Células amarelas: entrada manual |
+                Células verdes: cálculo automático
+            </span>
+
+        </div>
+
+
+        <!-- TABELA -->
+        <div class="tabela-wrapper">
+
+            <table class="planilha">
+
+                <thead>
+
+                    <tr>
+
+                        <th>Data contato</th>
+
+                        <th>Nome</th>
+
+                        <th>Empresa</th>
+
+                        <th>Origem</th>
+
+                        <th>Necessidade</th>
+
+                        <th>Valor estimado (R$)</th>
+
+                        <th>Etapa</th>
+
+                        <th>Próxima ação</th>
+
+                        <th>Retorno em</th>
+
+                        <th>Responsável</th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+                    <!-- CLIENTE 1 -->
+
+                    <tr>
+
+                        <td>01/10/2026</td>
+
+                        <td>João Almeida</td>
+
+                        <td>Oficina Horizonte</td>
+
+                        <td>Indicação</td>
+
+                        <td>Organizadores para oficina</td>
+
+                        <td>R$ 1.250,00</td>
+
+                        <td>Orçamento enviado</td>
+
+                        <td>Ligar para tirar dúvidas</td>
+
+                        <td>06/10/2026</td>
+
+                        <td>Comercial</td>
+
+                    </tr>
+
+
+                    <!-- CLIENTE 2 -->
+
+                    <tr>
+
+                        <td>02/10/2026</td>
+
+                        <td>Bianca Souza</td>
+
+                        <td>Ateliê Bianca</td>
+
+                        <td>Instagram</td>
+
+                        <td>Prateleiras</td>
+
+                        <td>R$ 680,00</td>
+
+                        <td>Qualificado</td>
+
+                        <td>Enviar catálogo</td>
+
+                        <td>05/10/2026</td>
+
+                        <td>Comercial</td>
+
+                    </tr>
+
+
+                    <!-- CLIENTE 3 -->
+
+                    <tr>
+
+                        <td>03/10/2026</td>
+
+                        <td>Mercadinho Sol</td>
+
+                        <td>Mercadinho Sol</td>
+
+                        <td>Prospecção</td>
+
+                        <td>Caixas organizadoras</td>
+
+                        <td>R$ 3.200,00</td>
+
+                        <td>Em negociação</td>
+
+                        <td>Confirmar volume</td>
+
+                        <td>07/10/2026</td>
+
+                        <td>Gestor</td>
+
+                    </tr>
+
+
+                    <!-- CLIENTE 4 -->
+
+                    <tr>
+
+                        <td>04/10/2026</td>
+
+                        <td>Pedro Lima</td>
+
+                        <td>Cliente final</td>
+
+                        <td>Site</td>
+
+                        <td>Organizador multiuso</td>
+
+                        <td>R$ 84,00</td>
+
+                        <td>Em negociação</td>
+
+                        <td>Responder mensagem</td>
+
+                        <td>04/10/2026</td>
+
+                        <td>Atendimento</td>
+
+                    </tr>
+
+
+                    <!-- CLIENTE 5 -->
+
+                    <tr>
+
+                        <td>05/10/2026</td>
+
+                        <td>Rita Gomes</td>
+
+                        <td>Loja Rita</td>
+
+                        <td>Indicação</td>
+
+                        <td>Compra recorrente</td>
+
+                        <td>R$ 950,00</td>
+
+                        <td>Ganho</td>
+
+                        <td>Agendar pós-venda</td>
+
+                        <td>20/10/2026</td>
+
+                        <td>Comercial</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>

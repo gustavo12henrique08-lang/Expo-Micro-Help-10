@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Formação do Preço de Venda</title>
+
+    <link rel="stylesheet" href="configuracao da tabelas.css">
+</head>
+
+<body>
+
+    <!-- BOTÃO VOLTAR -->
+    <button class="voltar" onclick="window.location.href='index.html'" aria-label="Voltar">
+        ←
+    </button>
+
+
+    <!-- CABEÇALHO -->
+    <header class="cabecalho">
+
+        <h1>FORMAÇÃO DO PREÇO DE VENDA</h1>
+
+        <h2>OBJETIVO DA PLANILHA</h2>
+
+        <p>
+            Calcular um preço inicial com base no custo unitário, despesas
+            variáveis incidentes sobre a venda e margem de lucro desejada.
+            É uma estimativa gerencial, não uma substituição da análise contábil.
+        </p>
+
+    </header>
+
+
+    <!-- INSTRUÇÕES -->
+    <section class="instrucoes">
+
+        <div class="instrucao">
+
+            <h3>COMO USAR — PASSO A PASSO</h3>
+
+            <p>
+                1) Some matéria-prima, embalagem e mão de obra direta para chegar
+                ao custo unitário. 2) Estime taxas, impostos e comissões variáveis
+                como percentual da venda. 3) Informe a margem desejada sobre o preço.
+                4) O preço sugerido é custo dividido por (1 menos percentuais).
+                5) Compare com concorrentes e disposição do cliente a pagar.
+            </p>
+
+        </div>
+
+
+        <div class="instrucao">
+
+            <h3>COMO INTERPRETAR E CUIDADOS</h3>
+
+            <p>
+                Exemplo: custo de R$ 25,00, despesas variáveis de 10% e margem
+                desejada de 20% geram preço aproximado de R$ 35,71. Se a soma dos
+                percentuais for igual ou superior a 100%, a fórmula não produz
+                preço válido. Confirme tributação e custos fixos com profissional habilitado.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- PLANILHA -->
+    <main class="planilha-container">
+
+
+        <!-- TÍTULO DA PLANILHA -->
+        <div class="titulo-planilha">
+
+            <strong>
+                EXEMPLOS PREENCHIDOS — dados fictícios para
+            </strong>
+
+            <span>
+                Células amarelas: entrada manual |
+                Células verdes: cálculo automático
+            </span>
+
+        </div>
+
+
+        <!-- TABELA -->
+        <div class="tabela-wrapper">
+
+            <table class="planilha">
+
+                <thead>
+
+                    <tr>
+
+                        <th>Produto</th>
+
+                        <th>Custo direto (R$)</th>
+
+                        <th>Custo fixo rateado (R$)</th>
+
+                        <th>Taxas/impostos (%)</th>
+
+                        <th>Margem desejada (%)</th>
+
+                        <th>Custo total (R$)</th>
+
+                        <th>Preço sugerido (R$)</th>
+
+                        <th>Lucro estimado (R$)</th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+                    <!-- PRODUTO 1 -->
+
+                    <tr>
+
+                        <td>Kit organizador</td>
+
+                        <td>R$ 22,00</td>
+
+                        <td>R$ 3,00</td>
+
+                        <td>8,0%</td>
+
+                        <td>20,0%</td>
+
+                        <td class="calculo">R$ 25,00</td>
+
+                        <td class="calculo">R$ 34,72</td>
+
+                        <td class="calculo">R$ 6,94</td>
+
+                    </tr>
+
+
+                    <!-- PRODUTO 2 -->
+
+                    <tr>
+
+                        <td>Caixa organizadora</td>
+
+                        <td>R$ 16,00</td>
+
+                        <td>R$ 2,50</td>
+
+                        <td>10,0%</td>
+
+                        <td>22,0%</td>
+
+                        <td class="calculo">R$ 18,50</td>
+
+                        <td class="calculo">R$ 27,21</td>
+
+                        <td class="calculo">R$ 5,99</td>
+
+                    </tr>
+
+
+                    <!-- PRODUTO 3 -->
+
+                    <tr>
+
+                        <td>Prateleira pequena</td>
+
+                        <td>R$ 68,00</td>
+
+                        <td>R$ 8,00</td>
+
+                        <td>12,0%</td>
+
+                        <td>25,0%</td>
+
+                        <td class="calculo">R$ 76,00</td>
+
+                        <td class="calculo">R$ 120,63</td>
+
+                        <td class="calculo">R$ 30,16</td>
+
+                    </tr>
+
+
+                    <!-- PRODUTO 4 -->
+
+                    <tr>
+
+                        <td>Organizador multiuso</td>
+
+                        <td>R$ 12,00</td>
+
+                        <td>R$ 1,50</td>
+
+                        <td>8,0%</td>
+
+                        <td>20,0%</td>
+
+                        <td class="calculo">R$ 13,50</td>
+
+                        <td class="calculo">R$ 18,75</td>
+
+                        <td class="calculo">R$ 3,75</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>

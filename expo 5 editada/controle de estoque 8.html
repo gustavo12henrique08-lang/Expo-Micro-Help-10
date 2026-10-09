@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Controle de Estoque e Reposição</title>
+
+    <link rel="stylesheet" href="configuracao da tabelas.css">
+</head>
+
+<body>
+
+    <!-- BOTÃO VOLTAR -->
+    <button class="voltar" onclick="window.location.href='index.html'" aria-label="Voltar">
+        ←
+    </button>
+
+
+    <!-- CABEÇALHO -->
+    <header class="cabecalho">
+
+        <h1>CONTROLE DE ESTOQUE E REPOSIÇÃO</h1>
+
+        <h2>OBJETIVO DA PLANILHA</h2>
+
+        <p>
+            Manter a quantidade disponível e sinalizar quando um produto
+            se aproxima do estoque mínimo, evitando perda de vendas e
+            compras desnecessárias.
+        </p>
+
+    </header>
+
+
+    <!-- INSTRUÇÕES -->
+    <section class="instrucoes">
+
+        <div class="instrucao">
+
+            <h3>COMO USAR — PASSO A PASSO</h3>
+
+            <p>
+                Cadastre cada SKU uma única vez. Preencha estoque inicial,
+                entradas de compra e saídas por venda, perda ou uso interno.
+                Faça contagem física periódica e compare com o saldo calculado.
+                Defina o estoque mínimo conforme prazo de reposição e procura.
+            </p>
+
+        </div>
+
+
+        <div class="instrucao">
+
+            <h3>COMO INTERPRETAR E CUIDADOS</h3>
+
+            <p>
+                Saldo teórico precisa ser conferido fisicamente. Investigue
+                diferenças por avarias, perdas, lançamentos atrasados ou erros
+                de contagem. Estoque parado também representa dinheiro imobilizado.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- PLANILHA -->
+    <main class="planilha-container">
+
+
+        <!-- TÍTULO DA PLANILHA -->
+        <div class="titulo-planilha">
+
+            <strong>
+                EXEMPLOS PREENCHIDOS — dados fictícios para
+            </strong>
+
+            <span>
+                Células amarelas: entrada manual |
+                Células verdes: cálculo automático
+            </span>
+
+        </div>
+
+
+        <!-- TABELA -->
+        <div class="tabela-wrapper">
+
+            <table class="planilha">
+
+                <thead>
+
+                    <tr>
+
+                        <th>Código</th>
+
+                        <th>Produto</th>
+
+                        <th>Categoria</th>
+
+                        <th>Estoque inicial</th>
+
+                        <th>Entradas</th>
+
+                        <th>Saídas</th>
+
+                        <th>Saldo atual</th>
+
+                        <th>Mínimo</th>
+
+                        <th>Custo unit. (R$)</th>
+
+                        <th>Valor em estoque (R$)</th>
+
+                        <th>Situação</th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+                    <!-- SKU-001 -->
+
+                    <tr>
+
+                        <td>SKU-001</td>
+
+                        <td>Kit organizador</td>
+
+                        <td>Organização</td>
+
+                        <td>25</td>
+
+                        <td>R$ 10,00</td>
+
+                        <td>R$ 7,00</td>
+
+                        <td class="calculo">28</td>
+
+                        <td>8</td>
+
+                        <td>R$ 22,00</td>
+
+                        <td class="calculo">R$ 616,00</td>
+
+                        <td class="status-ok">OK</td>
+
+                    </tr>
+
+
+                    <!-- SKU-002 -->
+
+                    <tr>
+
+                        <td>SKU-002</td>
+
+                        <td>Caixa organizadora</td>
+
+                        <td>Organização</td>
+
+                        <td>18</td>
+
+                        <td>R$ 5,00</td>
+
+                        <td>R$ 12,00</td>
+
+                        <td class="calculo">11</td>
+
+                        <td>10</td>
+
+                        <td>R$ 16,00</td>
+
+                        <td class="calculo">R$ 176,00</td>
+
+                        <td class="status-ok">OK</td>
+
+                    </tr>
+
+
+                    <!-- SKU-003 -->
+
+                    <tr>
+
+                        <td>SKU-003</td>
+
+                        <td>Prateleira pequena</td>
+
+                        <td>Casa</td>
+
+                        <td>12</td>
+
+                        <td>R$ 0,00</td>
+
+                        <td>R$ 5,00</td>
+
+                        <td class="calculo">7</td>
+
+                        <td>8</td>
+
+                        <td>R$ 68,00</td>
+
+                        <td class="calculo">R$ 476,00</td>
+
+                        <td class="status-repor">REPOR</td>
+
+                    </tr>
+
+
+                    <!-- SKU-004 -->
+
+                    <tr>
+
+                        <td>SKU-004</td>
+
+                        <td>Organizador multiuso</td>
+
+                        <td>Casa</td>
+
+                        <td>30</td>
+
+                        <td>R$ 15,00</td>
+
+                        <td>R$ 18,00</td>
+
+                        <td class="calculo">27</td>
+
+                        <td>10</td>
+
+                        <td>R$ 12,00</td>
+
+                        <td class="calculo">R$ 324,00</td>
+
+                        <td class="status-ok">OK</td>
+
+                    </tr>
+
+
+                    <!-- SKU-005 -->
+
+                    <tr>
+
+                        <td>SKU-005</td>
+
+                        <td>Sacola reforçada</td>
+
+                        <td>Embalagem</td>
+
+                        <td>100</td>
+
+                        <td>R$ 50,00</td>
+
+                        <td>R$ 62,00</td>
+
+                        <td class="calculo">88</td>
+
+                        <td>40</td>
+
+                        <td>R$ 0,80</td>
+
+                        <td class="calculo">R$ 70,40</td>
+
+                        <td class="status-ok">OK</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>

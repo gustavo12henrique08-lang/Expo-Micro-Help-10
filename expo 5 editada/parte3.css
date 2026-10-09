@@ -1,0 +1,1583 @@
+/* ==========================================
+   CONFIGURAÇÕES
+========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #ffffff;
+
+    color: #071d4f;
+}
+
+
+/* ==========================================
+   CABEÇALHO
+========================================== */
+
+.cabecalho {
+
+    height: 70px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 45px;
+
+    background: white;
+
+    border-bottom: 1px solid #dce4f2;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+}
+
+
+.menu-esquerdo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+}
+
+
+.voltar {
+
+    width: 35px;
+
+    height: 35px;
+
+    border: none;
+
+    background: #eef5ff;
+
+    color: #064fc1;
+
+    border-radius: 6px;
+
+    font-size: 22px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.voltar:hover {
+
+    background: #086cff;
+
+    color: white;
+
+    transform: translateX(-3px);
+}
+
+
+.mini-logo {
+
+    font-size: 9px;
+
+    line-height: 9px;
+
+    color: #061d50;
+}
+
+
+.mini-logo strong {
+
+    display: block;
+
+    color: #087cff;
+}
+
+
+.logo-principal {
+
+    position: absolute;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    color: #071d4f;
+}
+
+
+.menu {
+
+    display: flex;
+
+    gap: 8px;
+}
+
+
+.menu a {
+
+    text-decoration: none;
+
+    color: #071d4f;
+
+    font-size: 11px;
+
+    padding: 8px 12px;
+
+    border: 1px solid #dce4f2;
+
+    border-radius: 4px;
+
+    transition: 0.3s;
+}
+
+
+.menu a:hover {
+
+    background: #087cff;
+
+    color: white;
+
+    border-color: #087cff;
+}
+
+
+
+/* ==========================================
+   TÍTULO
+========================================== */
+
+.titulo {
+
+    width: 96%;
+
+    min-height: 330px;
+
+    margin: 0 auto 70px;
+
+    padding: 60px 30px;
+
+    flex-direction: column;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            #061d50 0%,
+            #1018a5 50%,
+            #087cff 100%
+        );
+
+    border-radius: 0 0 24px 24px;
+
+    box-shadow:
+        0 20px 50px rgba(6, 29, 80, 0.20);
+}
+
+
+.titulo::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+
+    height: 500px;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,0.05);
+
+    top: -280px;
+
+    right: -120px;
+
+    pointer-events: none;
+}
+
+
+.titulo::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 350px;
+
+    height: 350px;
+
+    border-radius: 50%;
+
+    background: rgba(0, 120, 255, 0.12);
+
+    bottom: -220px;
+
+    left: -100px;
+
+    pointer-events: none;
+}
+
+
+.titulo .categoria {
+
+    display: block;
+
+    position: relative;
+
+    z-index: 2;
+
+    margin-bottom: 14px;
+
+    font-size: 10px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    color: #9bc4ff;
+}
+
+
+.titulo h1 {
+
+    position: relative;
+
+    z-index: 2;
+
+    margin: 0 0 18px;
+
+    font-size: 42px;
+
+    line-height: 1.15;
+
+    color: white;
+}
+
+
+.titulo p {
+
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    color: #e6efff;
+}
+
+
+
+/* ==========================================
+   NOVA ÁREA DO CHAT
+========================================== */
+
+.conteudo-chat {
+
+    width: 100%;
+
+    padding-bottom: 10px;
+}
+
+
+
+/* ==========================================
+   INTRODUÇÃO DO CHAT
+========================================== */
+
+.chat-introducao {
+
+    max-width: 750px;
+
+    margin: 0 auto;
+
+    padding: 20px 20px 80px;
+
+    text-align: center;
+}
+
+
+.numero {
+
+    display: block;
+
+    font-size: 10px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    color: #087cff;
+
+    margin-bottom: 10px;
+}
+
+
+.chat-introducao h2 {
+
+    font-size: 28px;
+
+    margin: 12px 0 20px;
+}
+
+
+.chat-introducao p {
+
+    max-width: 680px;
+
+    margin: 12px auto;
+
+    line-height: 1.8;
+
+    color: #59667d;
+
+    font-size: 14px;
+}
+
+
+
+/* ==========================================
+   DESTAQUE
+========================================== */
+
+.destaque {
+
+    max-width: 1050px;
+
+    margin: 20px auto 100px;
+
+    padding: 45px 50px;
+
+    display: grid;
+
+    grid-template-columns: 6px 1fr;
+
+    gap: 30px;
+
+    align-items: center;
+
+    background: #f5f9ff;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 15px 40px rgba(0, 60, 150, 0.07);
+}
+
+
+.linha-decorativa {
+
+    height: 100%;
+
+    min-height: 170px;
+
+    background: #087cff;
+
+    border-radius: 10px;
+}
+
+
+.destaque-conteudo {
+
+    text-align: left;
+}
+
+
+.destaque-conteudo > span {
+
+    font-size: 9px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    color: #087cff;
+}
+
+
+.destaque h2 {
+
+    font-size: 28px;
+
+    margin: 10px 0 18px;
+}
+
+
+.destaque p {
+
+    color: #59667d;
+
+    line-height: 1.8;
+
+    margin: 12px 0;
+}
+
+
+
+/* ==========================================
+   ÁREA DA IMAGEM
+========================================== */
+
+.area-imagem {
+
+    width: calc(100% - 40px);
+
+    max-width: 1050px;
+
+    margin: 0 auto;
+
+    padding: 30px 0 100px;
+
+    display: grid;
+
+    grid-template-columns: 300px minmax(0, 1fr);
+
+    gap: 50px;
+
+    align-items: center;
+}
+
+
+.imagem-texto {
+
+    width: 100%;
+
+    text-align: center;
+}
+
+
+.imagem-texto h2 {
+
+    font-size: 23px;
+
+    line-height: 1.2;
+
+    margin: 0 0 12px;
+
+    color: #071d4f;
+}
+
+
+.imagem-texto p {
+
+    margin: 0;
+
+    color: #66748b;
+
+    line-height: 1.7;
+
+    font-size: 14px;
+}
+
+
+.imagem-box {
+
+    width: 100%;
+
+    height: 330px;
+
+    padding: 7px;
+
+    border-radius: 14px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #02143d,
+            #086cff
+        );
+
+    box-shadow:
+        0 20px 50px rgba(0, 50, 150, 0.20);
+
+    overflow: hidden;
+}
+
+
+.imagem-box img {
+
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    border-radius: 8px;
+}
+
+
+
+/* ==========================================
+   CONTEÚDO
+========================================== */
+
+.conteudo {
+
+    max-width: 900px;
+
+    margin: auto;
+
+    padding: 50px 20px 100px;
+
+    text-align: center;
+}
+
+
+.conteudo h2 {
+
+    font-size: 30px;
+
+    margin: 12px 0 20px;
+}
+
+
+.conteudo > p {
+
+    max-width: 750px;
+
+    margin: 12px auto;
+
+    color: #59667d;
+
+    line-height: 1.8;
+}
+
+
+
+/* ==========================================
+   TEMAS DA IA
+========================================== */
+
+.temas-ia {
+
+    margin-top: 40px;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 18px;
+
+    text-align: left;
+}
+
+
+.tema-ia {
+
+    padding: 22px;
+
+    background: white;
+
+    border: 1px solid #dce7f7;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 8px 25px rgba(0, 50, 130, 0.05);
+
+    transition: 0.3s;
+}
+
+
+.tema-ia:hover {
+
+    transform: translateY(-5px);
+
+    border-color: #087cff;
+
+    box-shadow:
+        0 12px 30px rgba(0, 80, 200, 0.10);
+}
+
+
+.tema-ia h3 {
+
+    font-size: 17px;
+
+    margin-bottom: 8px;
+
+    color: #071d4f;
+}
+
+
+.tema-ia p {
+
+    color: #69768a;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+
+    margin: 0;
+}
+
+
+
+/* ==========================================
+   BLOCO OBJETIVO
+========================================== */
+
+.bloco-chat {
+
+    max-width: 800px;
+
+    margin: 0 auto 100px;
+
+    padding: 45px 40px;
+
+    text-align: center;
+
+    background: white;
+
+    border: 1px solid #dce7f7;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 50, 130, 0.05);
+}
+
+
+.bloco-chat h2 {
+
+    font-size: 28px;
+
+    margin: 12px 0 20px;
+}
+
+
+.bloco-chat p {
+
+    color: #59667d;
+
+    line-height: 1.8;
+
+    margin: 12px 0;
+}
+
+
+
+/* ==========================================
+   AVISO IMPORTANTE
+========================================== */
+
+.aviso-importante {
+
+    width: calc(100% - 40px);
+
+    max-width: 1050px;
+
+    margin: 0 auto 100px;
+
+    padding: 40px 45px;
+
+    display: flex;
+
+    gap: 25px;
+
+    align-items: flex-start;
+
+    background: #f5f9ff;
+
+    border-left: 5px solid #087cff;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 12px 35px rgba(0, 60, 150, 0.07);
+}
+
+
+.aviso-icone {
+
+    width: 42px;
+
+    height: 42px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #087cff;
+
+    color: white;
+
+    font-weight: bold;
+
+    font-size: 22px;
+}
+
+
+.aviso-conteudo {
+
+    flex: 1;
+}
+
+
+.aviso-conteudo > span {
+
+    font-size: 9px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    color: #087cff;
+}
+
+
+.aviso-conteudo h2 {
+
+    margin: 10px 0 15px;
+
+    font-size: 24px;
+}
+
+
+.aviso-conteudo p {
+
+    color: #59667d;
+
+    line-height: 1.8;
+
+    margin: 10px 0;
+}
+
+
+
+/* ==========================================
+   BLOCO FINAL
+========================================== */
+
+.chat-final {
+
+    max-width: 750px;
+
+    margin: 0 auto;
+
+    padding: 10px 20px 100px;
+
+    text-align: center;
+}
+
+
+.chat-final h2 {
+
+    font-size: 28px;
+
+    margin: 12px 0 20px;
+}
+
+
+.chat-final p {
+
+    color: #59667d;
+
+    line-height: 1.8;
+
+    margin: 12px auto;
+
+}
+
+
+
+/* ==========================================
+   CARDS
+========================================== */
+
+.cards {
+
+    max-width: 1050px;
+
+    margin: auto;
+
+    padding: 20px;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+.card {
+
+    padding: 25px;
+
+    background: white;
+
+    border: 1px solid #dce7f7;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    transition: 0.3s;
+
+    box-shadow:
+        0 8px 25px rgba(0, 50, 130, 0.05);
+
+    text-decoration: none;
+
+    color: inherit;
+
+    display: block;
+
+    cursor: pointer;
+}
+
+
+.card:hover {
+
+    transform: translateY(-8px);
+
+    border-color: #087cff;
+
+    box-shadow:
+        0 15px 35px rgba(0, 80, 200, 0.12);
+}
+
+
+.card-imagem {
+
+    height: 130px;
+
+    margin: 15px 0;
+
+    border-radius: 6px;
+
+    background: #f2f7ff;
+
+    border: 1px solid #d8e7ff;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    overflow: hidden;
+}
+
+
+.card-imagem img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    border-radius: 6px;
+}
+
+
+.card h3 {
+
+    font-size: 18px;
+
+    margin-bottom: 10px;
+
+    color: #071d4f;
+}
+
+
+.card p {
+
+    color: #69768a;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+
+    margin: 0;
+}
+
+
+
+/* ==========================================
+   SAIBA MAIS
+   MANTIDO DO ORIGINAL
+========================================== */
+
+.saiba-mais {
+
+    margin-top: 100px;
+
+    padding: 55px 20px;
+
+    background: #061d50;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+
+#botaoSaibaMais {
+
+    background: none;
+
+    border: none;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+
+.seta {
+
+    width: 42px;
+
+    height: 42px;
+
+    margin: 18px auto 0;
+
+    border: 1px solid #4aa4ff;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 20px;
+
+    color: #4aa4ff;
+
+    transition: 0.3s;
+}
+
+
+#botaoSaibaMais:hover .seta {
+
+    background: #087cff;
+
+    color: white;
+
+    transform: translateY(6px);
+}
+
+
+
+/* ==========================================
+   CONTEÚDO EXTRA
+========================================== */
+
+.mais-conteudo {
+
+    display: none;
+
+    background: #f5f9ff;
+
+    padding: 90px 20px;
+}
+
+
+.mais-conteudo.ativo {
+
+    display: block;
+
+    animation: aparecer 0.5s ease;
+}
+
+
+@keyframes aparecer {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(-20px);
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+
+}
+
+
+.extra-conteudo {
+
+    max-width: 900px;
+
+    margin: auto;
+
+    text-align: center;
+}
+
+
+/* ==========================================
+   RODAPÉ
+========================================== */
+
+footer {
+
+    padding: 25px 40px;
+
+    background: white;
+
+    border-top: 1px solid #dce4f2;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    color: #60708b;
+
+    font-size: 11px;
+}
+
+
+
+/* ==========================================
+   CELULAR
+========================================== */
+
+@media (max-width: 750px) {
+
+    .cabecalho {
+
+        padding: 0 15px;
+    }
+
+
+    .menu {
+
+        display: none;
+    }
+
+
+    .logo-principal {
+
+        font-size: 15px;
+    }
+
+
+    .titulo {
+
+        min-height: 280px;
+
+        width: 94%;
+
+        padding: 45px 20px;
+    }
+
+
+    .titulo h1 {
+
+        font-size: 30px;
+    }
+
+
+    .destaque {
+
+        margin-left: 20px;
+
+        margin-right: 20px;
+
+        padding: 35px 25px;
+
+        grid-template-columns: 4px 1fr;
+    }
+
+
+    .area-imagem {
+
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+
+    .imagem-box {
+
+        height: 250px;
+    }
+
+
+    .temas-ia {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .bloco-chat {
+
+        margin-left: 20px;
+
+        margin-right: 20px;
+
+        padding: 35px 25px;
+    }
+
+
+    .aviso-importante {
+
+        margin-left: 20px;
+
+        margin-right: 20px;
+
+        padding: 30px 25px;
+
+        flex-direction: column;
+    }
+
+
+    .cards {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    footer {
+
+        flex-direction: column;
+
+        gap: 10px;
+
+        text-align: center;
+    }
+
+}
+
+
+
+/* ==========================================
+   AJUSTES DE ESCALA — REFERÊNCIA MICROHELP
+   Conteúdo mais compacto sem perder proporção
+========================================== */
+
+body {
+    font-size: 14px;
+}
+
+/* Cabeçalho mais discreto */
+.cabecalho {
+    height: 60px;
+    padding: 0 35px;
+}
+
+.menu-esquerdo {
+    gap: 14px;
+}
+
+.voltar {
+    width: 31px;
+    height: 31px;
+    font-size: 19px;
+}
+
+.logo-principal {
+    font-size: 16px;
+}
+
+/* Banner principal mais baixo e com tipografia menor */
+.titulo {
+    width: 96%;
+    min-height: 270px;
+    margin: 0 auto 48px;
+    padding: 45px 24px;
+    border-radius: 0 0 18px 18px;
+}
+
+.titulo .categoria {
+    margin-bottom: 10px;
+    font-size: 9px;
+    letter-spacing: 2px;
+}
+
+.titulo h1 {
+    margin-bottom: 12px;
+    font-size: 34px;
+    line-height: 1.15;
+}
+
+.titulo p {
+    max-width: 560px;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+/* Introduções e textos */
+.chat-introducao {
+    max-width: 690px;
+    padding: 16px 18px 58px;
+}
+
+.numero {
+    font-size: 9px;
+    margin-bottom: 8px;
+}
+
+.chat-introducao h2,
+.bloco-chat h2,
+.chat-final h2 {
+    font-size: 24px;
+    margin: 10px 0 15px;
+}
+
+.chat-introducao p,
+.chat-final p,
+.conteudo > p,
+.bloco-chat p {
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.chat-introducao p {
+    max-width: 640px;
+    margin: 10px auto;
+}
+
+/* Blocos de destaque mais estreitos e compactos */
+.destaque {
+    max-width: 900px;
+    margin: 16px auto 75px;
+    padding: 34px 38px;
+    grid-template-columns: 5px 1fr;
+    gap: 23px;
+}
+
+.destaque h2 {
+    font-size: 24px;
+    margin: 8px 0 14px;
+}
+
+.destaque p {
+    font-size: 13px;
+    line-height: 1.7;
+    margin: 9px 0;
+}
+
+/* Imagens menores, mantendo proporção e enquadramento */
+.area-imagem {
+    width: calc(100% - 48px);
+    max-width: 900px;
+    padding: 24px 0 75px;
+    grid-template-columns: 260px minmax(0, 1fr);
+    gap: 36px;
+}
+
+.imagem-texto h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.imagem-texto p {
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.imagem-box {
+    height: 275px;
+    padding: 6px;
+    border-radius: 12px;
+}
+
+/* Conteúdo principal */
+.conteudo {
+    max-width: 820px;
+    padding: 38px 18px 75px;
+}
+
+.conteudo h2 {
+    font-size: 25px;
+    margin: 10px 0 16px;
+}
+
+.temas-ia {
+    margin-top: 30px;
+    gap: 14px;
+}
+
+.tema-ia {
+    padding: 18px;
+}
+
+.tema-ia h3 {
+    font-size: 15px;
+}
+
+.tema-ia p {
+    font-size: 12px;
+    line-height: 1.55;
+}
+
+/* Bloco de objetivo */
+.bloco-chat {
+    max-width: 700px;
+    margin-bottom: 75px;
+    padding: 34px 30px;
+}
+
+/* Aviso */
+.aviso-importante {
+    width: calc(100% - 48px);
+    max-width: 900px;
+    margin-bottom: 75px;
+    padding: 32px 36px;
+    gap: 20px;
+}
+
+.aviso-icone {
+    width: 36px;
+    height: 36px;
+    font-size: 19px;
+}
+
+.aviso-conteudo h2 {
+    font-size: 21px;
+    margin: 8px 0 12px;
+}
+
+.aviso-conteudo p {
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+/* Cards menores */
+.cards {
+    max-width: 900px;
+    padding: 18px;
+    gap: 18px;
+}
+
+.card {
+    padding: 20px;
+}
+
+.card-imagem {
+    height: 110px;
+    margin: 12px 0;
+}
+
+.card h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.card p {
+    font-size: 12px;
+    line-height: 1.55;
+}
+
+/* Seções finais e rodapé */
+.chat-final {
+    max-width: 690px;
+    padding: 8px 18px 75px;
+}
+
+.saiba-mais {
+    margin-top: 75px;
+    padding: 42px 18px;
+}
+
+.mais-conteudo {
+    padding: 70px 18px;
+}
+
+.extra-conteudo {
+    max-width: 820px;
+}
+
+footer {
+    padding: 20px 30px;
+    font-size: 10px;
+}
+
+/* Responsividade: manter os ajustes em telas menores */
+@media (max-width: 750px) {
+    .cabecalho {
+        height: 56px;
+        padding: 0 14px;
+    }
+
+    .logo-principal {
+        font-size: 13px;
+        letter-spacing: 1px;
+    }
+
+    .titulo {
+        min-height: 235px;
+        width: 94%;
+        margin-bottom: 36px;
+        padding: 35px 18px;
+    }
+
+    .titulo .categoria {
+        font-size: 8px;
+        letter-spacing: 1.5px;
+    }
+
+    .titulo h1 {
+        font-size: 27px;
+    }
+
+    .titulo p {
+        font-size: 12px;
+    }
+
+    .chat-introducao {
+        padding: 12px 18px 42px;
+    }
+
+    .chat-introducao h2,
+    .bloco-chat h2,
+    .chat-final h2 {
+        font-size: 21px;
+    }
+
+    .chat-introducao p,
+    .chat-final p,
+    .conteudo > p,
+    .bloco-chat p {
+        font-size: 12px;
+        line-height: 1.65;
+    }
+
+    .destaque {
+        margin: 14px 16px 52px;
+        padding: 25px 20px;
+        grid-template-columns: 4px 1fr;
+        gap: 16px;
+    }
+
+    .destaque h2 {
+        font-size: 21px;
+    }
+
+    .area-imagem {
+        width: calc(100% - 36px);
+        padding: 18px 0 52px;
+        gap: 22px;
+    }
+
+    .imagem-texto h2 {
+        font-size: 19px;
+    }
+
+    .imagem-box {
+        height: 220px;
+    }
+
+    .conteudo {
+        padding: 30px 18px 52px;
+    }
+
+    .conteudo h2 {
+        font-size: 22px;
+    }
+
+    .tema-ia {
+        padding: 16px;
+    }
+
+    .bloco-chat {
+        margin: 0 16px 52px;
+        padding: 26px 20px;
+    }
+
+    .aviso-importante {
+        width: calc(100% - 32px);
+        margin-bottom: 52px;
+        padding: 25px 20px;
+        gap: 15px;
+    }
+
+    .aviso-conteudo h2 {
+        font-size: 19px;
+    }
+
+    .cards {
+        padding: 16px;
+        gap: 14px;
+    }
+
+    .card {
+        padding: 18px;
+    }
+
+    .card-imagem {
+        height: 105px;
+    }
+
+    .saiba-mais {
+        margin-top: 52px;
+        padding: 35px 16px;
+    }
+
+    .mais-conteudo {
+        padding: 50px 16px;
+    }
+
+    footer {
+        padding: 18px 16px;
+    }
+}

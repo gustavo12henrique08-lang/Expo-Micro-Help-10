@@ -1,0 +1,1262 @@
+/* ==========================================
+   CONFIGURAÇÕES
+========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    color: #071d4f;
+}
+
+
+/* ==========================================
+   CABEÇALHO
+========================================== */
+
+.cabecalho {
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 45px;
+
+    background: white;
+
+    border-bottom: 1px solid #dce4f2;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+}
+
+
+/* ==========================================
+   MENU ESQUERDO
+========================================== */
+
+.menu-esquerdo {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+
+/* ==========================================
+   BOTÃO VOLTAR
+========================================== */
+
+.voltar {
+    width: 35px;
+    height: 35px;
+
+    border: none;
+
+    background: #eef5ff;
+    color: #064fc1;
+
+    border-radius: 6px;
+
+    font-size: 22px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.voltar:hover {
+    background: #086cff;
+    color: white;
+
+    transform: translateX(-3px);
+}
+
+
+/* ==========================================
+   LOGO
+========================================== */
+
+.logo-principal {
+    position: absolute;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    color: #071d4f;
+}
+
+
+/* ==========================================
+   TÍTULO AZUL
+========================================== */
+
+.titulo {
+
+    width: 96%;
+
+    min-height: 330px;
+
+    margin: 0 auto 70px;
+
+    padding: 60px 30px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            #061d50 0%,
+            #1018a5 50%,
+            #087cff 100%
+        );
+
+    border-radius: 0 0 24px 24px;
+
+    box-shadow:
+        0 20px 50px rgba(6, 29, 80, 0.20);
+}
+
+
+/* Círculo superior */
+
+.titulo::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,0.05);
+
+    top: -280px;
+    right: -120px;
+
+    pointer-events: none;
+}
+
+
+/* Círculo inferior */
+
+.titulo::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 350px;
+    height: 350px;
+
+    border-radius: 50%;
+
+    background: rgba(0, 120, 255, 0.12);
+
+    bottom: -220px;
+    left: -100px;
+
+    pointer-events: none;
+}
+
+
+/* ==========================================
+   TÍTULO
+========================================== */
+
+.titulo h1 {
+
+    position: relative;
+
+    z-index: 2;
+
+    margin: 0 0 18px;
+
+    font-size: 42px;
+
+    line-height: 1.15;
+
+    color: white;
+}
+
+
+.titulo p {
+
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    color: #e6efff;
+}
+
+
+/* ==========================================
+   ÁREA PRINCIPAL DO CONTEÚDO
+========================================== */
+
+.conteudo-principal {
+
+    width: calc(100% - 40px);
+
+    max-width: 850px;
+
+    margin: 0 auto;
+
+    padding-bottom: 60px;
+}
+
+
+/* ==========================================
+   INTRODUÇÃO
+========================================== */
+
+.bloco-introducao {
+
+    text-align: center;
+
+    padding: 10px 20px 75px;
+}
+
+
+.etiqueta {
+
+    display: block;
+
+    margin-bottom: 12px;
+
+    font-size: 10px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    color: #087cff;
+}
+
+
+.bloco-introducao h2 {
+
+    font-size: 30px;
+
+    margin-bottom: 20px;
+
+    color: #071d4f;
+}
+
+
+.bloco-introducao p {
+
+    max-width: 700px;
+
+    margin: 12px auto;
+
+    color: #59667d;
+
+    line-height: 1.8;
+
+    font-size: 15px;
+}
+
+
+/* ==========================================
+   BLOCOS DE CONTEÚDO
+========================================== */
+
+.bloco {
+
+    margin-bottom: 75px;
+
+    padding: 42px 45px;
+
+    background: #ffffff;
+
+    border: 1px solid #e0e9f6;
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 12px 35px rgba(0, 50, 130, 0.06);
+}
+
+
+/* ==========================================
+   TÍTULO DOS BLOCOS
+========================================== */
+
+.titulo-bloco {
+
+    display: grid;
+
+    grid-template-columns: 5px 1fr;
+
+    gap: 20px;
+
+    align-items: center;
+
+    margin-bottom: 25px;
+}
+
+
+.linha-azul {
+
+    width: 5px;
+
+    min-height: 65px;
+
+    height: 100%;
+
+    border-radius: 10px;
+
+    background:
+        linear-gradient(
+            180deg,
+            #087cff,
+            #1740e8
+        );
+}
+
+
+.numero-secao {
+
+    display: block;
+
+    margin-bottom: 5px;
+
+    font-size: 10px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    color: #087cff;
+}
+
+
+.titulo-bloco h2 {
+
+    font-size: 27px;
+
+    color: #071d4f;
+}
+
+
+/* ==========================================
+   PARÁGRAFOS
+========================================== */
+
+.bloco > p {
+
+    color: #59667d;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+
+    margin: 13px 0;
+}
+
+
+.bloco strong {
+
+    color: #071d4f;
+}
+
+
+/* ==========================================
+   NICHOS / OPÇÕES
+========================================== */
+
+.lista-opcoes {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+
+    margin-top: 30px;
+}
+
+
+.opcao {
+
+    padding: 22px;
+
+    background: #f5f9ff;
+
+    border: 1px solid #dce8f8;
+
+    border-radius: 10px;
+
+    transition: 0.3s;
+}
+
+
+.opcao:hover {
+
+    transform: translateY(-3px);
+
+    border-color: #087cff;
+
+    box-shadow:
+        0 10px 25px rgba(0, 80, 200, 0.08);
+}
+
+
+.opcao h3 {
+
+    font-size: 16px;
+
+    margin-bottom: 10px;
+
+    color: #071d4f;
+}
+
+
+.opcao p {
+
+    color: #68758b;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+}
+
+
+/* ==========================================
+   FORMAS DE ATUAÇÃO
+========================================== */
+
+.formas-negocio {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+
+    margin-top: 30px;
+}
+
+
+.formas-negocio div {
+
+    padding: 20px;
+
+    border-left: 3px solid #087cff;
+
+    background: #f7faff;
+
+    border-radius: 7px;
+}
+
+
+.formas-negocio strong {
+
+    display: block;
+
+    font-size: 15px;
+
+    margin-bottom: 7px;
+
+    color: #071d4f;
+}
+
+
+.formas-negocio span {
+
+    display: block;
+
+    color: #68758b;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+}
+
+
+/* ==========================================
+   INVESTIMENTO
+========================================== */
+
+.investimento {
+
+    overflow: hidden;
+}
+
+
+/* ==========================================
+   TABELA
+========================================== */
+
+.tabela-container {
+
+    width: 100%;
+
+    margin-top: 30px;
+
+    overflow-x: auto;
+
+    border: 1px solid #dce7f7;
+
+    border-radius: 10px;
+}
+
+
+table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    background: white;
+
+    font-size: 14px;
+}
+
+
+thead {
+
+    background:
+        linear-gradient(
+            135deg,
+            #061d50,
+            #1018a5
+        );
+
+    color: white;
+}
+
+
+th {
+
+    padding: 16px;
+
+    text-align: left;
+
+    font-size: 13px;
+}
+
+
+td {
+
+    padding: 15px 16px;
+
+    color: #59667d;
+
+    border-top: 1px solid #e5edf8;
+
+    line-height: 1.5;
+}
+
+
+td:last-child {
+
+    color: #071d4f;
+
+    font-weight: bold;
+}
+
+
+tbody tr:hover {
+
+    background: #f5f9ff;
+}
+
+
+/* ==========================================
+   AVISO DE INVESTIMENTO
+========================================== */
+
+.aviso-investimento {
+
+    margin-top: 25px;
+
+    padding: 22px 25px;
+
+    background: #f5f9ff;
+
+    border-left: 4px solid #087cff;
+
+    border-radius: 8px;
+}
+
+
+.aviso-investimento strong {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #087cff;
+
+    font-size: 14px;
+}
+
+
+.aviso-investimento p {
+
+    color: #637088;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+}
+
+
+/* ==========================================
+   LISTA DE PERGUNTAS
+========================================== */
+
+.lista-perguntas {
+
+    margin-top: 25px;
+
+    padding-left: 22px;
+}
+
+
+.lista-perguntas li {
+
+    margin: 12px 0;
+
+    padding-left: 8px;
+
+    color: #59667d;
+
+    line-height: 1.6;
+
+    font-size: 14px;
+}
+
+
+.lista-perguntas li::marker {
+
+    color: #087cff;
+}
+
+
+/* ==========================================
+   DESTAQUE FINAL
+========================================== */
+
+.destaque-final {
+
+    background:
+        linear-gradient(
+            145deg,
+            #f5f9ff,
+            #ffffff
+        );
+
+    border-color: #cfe1fb;
+}
+
+
+/* ==========================================
+   BLOCO ANALISAR IDEIA
+========================================== */
+
+.analise-ideia {
+
+    margin: 20px 0 70px;
+
+    padding: 45px;
+
+    text-align: center;
+
+    border-radius: 14px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #061d50,
+            #1018a5,
+            #087cff
+        );
+
+    color: white;
+
+    box-shadow:
+        0 15px 40px rgba(0, 50, 150, 0.15);
+}
+
+
+.analise-ideia span {
+
+    font-size: 9px;
+
+    letter-spacing: 3px;
+
+    font-weight: bold;
+
+    color: #9bc4ff;
+}
+
+
+.analise-ideia h2 {
+
+    margin: 12px 0 15px;
+
+    font-size: 27px;
+}
+
+
+.analise-ideia p {
+
+    max-width: 650px;
+
+    margin: auto;
+
+    color: #e6efff;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+
+/* ==========================================
+   FONTES
+========================================== */
+
+.fontes {
+
+    margin-bottom: 50px;
+
+    padding: 30px 10px;
+
+    text-align: center;
+}
+
+
+.fontes h2 {
+
+    font-size: 22px;
+
+    margin-bottom: 20px;
+}
+
+
+.fontes ul {
+
+    list-style: none;
+}
+
+
+.fontes li {
+
+    margin: 8px 0;
+
+    color: #69768a;
+
+    font-size: 13px;
+}
+
+
+/* ==========================================
+   CARDS
+========================================== */
+
+.cards {
+
+    max-width: 1050px;
+
+    margin: 30px auto 0;
+
+    padding: 20px;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+.card {
+
+    padding: 25px;
+
+    background: white;
+
+    border: 1px solid #dce7f7;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    transition: 0.3s;
+
+    box-shadow:
+        0 8px 25px rgba(0, 50, 130, 0.05);
+
+    text-decoration: none;
+
+    color: inherit;
+
+    display: block;
+
+    cursor: pointer;
+}
+
+
+.card:hover {
+
+    transform: translateY(-8px);
+
+    border-color: #087cff;
+
+    box-shadow:
+        0 15px 35px rgba(0, 80, 200, 0.12);
+}
+
+
+.card-imagem {
+
+    height: 130px;
+
+    margin: 15px 0;
+
+    border-radius: 6px;
+
+    background: #f2f7ff;
+
+    border: 1px solid #d8e7ff;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    overflow: hidden;
+}
+
+
+.card-imagem img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    border-radius: 6px;
+}
+
+
+.card h3 {
+
+    font-size: 18px;
+
+    margin-bottom: 10px;
+
+    color: #071d4f;
+}
+
+
+.card p {
+
+    color: #69768a;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+
+    margin: 0;
+}
+
+
+/* ==========================================
+   SAIBA MAIS
+========================================== */
+
+.saiba-mais {
+
+    margin-top: 100px;
+
+    padding: 55px 20px;
+
+    background: #061d50;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+
+#botaoSaibaMais {
+
+    background: none;
+
+    border: none;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+
+.seta {
+
+    width: 42px;
+
+    height: 42px;
+
+    margin: 18px auto 0;
+
+    border: 1px solid #4aa4ff;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 20px;
+
+    color: #4aa4ff;
+
+    transition: 0.3s;
+}
+
+
+#botaoSaibaMais:hover .seta {
+
+    background: #087cff;
+
+    color: white;
+
+    transform: translateY(6px);
+}
+
+
+/* ==========================================
+   CONTEÚDO EXTRA
+========================================== */
+
+.mais-conteudo {
+
+    display: none;
+
+    background: #f5f9ff;
+
+    padding: 90px 20px;
+}
+
+
+.mais-conteudo.ativo {
+
+    display: block;
+
+    animation: aparecer 0.5s ease;
+}
+
+
+@keyframes aparecer {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(-20px);
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+
+}
+
+
+.extra-conteudo {
+
+    max-width: 900px;
+
+    margin: auto;
+
+    text-align: center;
+}
+
+
+.extra-conteudo h2 {
+
+    font-size: 30px;
+
+    margin: 12px 0 15px;
+}
+
+
+.extra-conteudo > p {
+
+    color: #637088;
+
+    line-height: 1.7;
+}
+
+
+/* ==========================================
+   CARDS EXTRAS
+========================================== */
+
+.extra-cards {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+    margin-top: 45px;
+}
+
+
+.extra-cards div {
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 8px;
+
+    border: 1px solid #dce7f7;
+}
+
+
+.extra-cards strong {
+
+    color: #087cff;
+
+    font-size: 12px;
+}
+
+
+.extra-cards h3 {
+
+    margin: 12px 0;
+}
+
+
+.extra-cards p {
+
+    color: #68758b;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+}
+
+
+/* ==========================================
+   RODAPÉ
+========================================== */
+
+footer {
+
+    padding: 25px 40px;
+
+    background: white;
+
+    border-top: 1px solid #dce4f2;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    color: #60708b;
+
+    font-size: 11px;
+}
+
+
+/* ==========================================
+   CELULAR
+========================================== */
+
+@media (max-width: 750px) {
+
+    .cabecalho {
+
+        padding: 0 15px;
+    }
+
+
+    .logo-principal {
+
+        font-size: 15px;
+    }
+
+
+    .titulo {
+
+        width: 94%;
+
+        min-height: 280px;
+
+        margin-bottom: 45px;
+
+        padding: 50px 20px;
+    }
+
+
+    .titulo h1 {
+
+        font-size: 30px;
+    }
+
+
+    .titulo p {
+
+        font-size: 13px;
+    }
+
+
+    .conteudo-principal {
+
+        width: calc(100% - 25px);
+    }
+
+
+    .bloco {
+
+        padding: 30px 22px;
+
+        margin-bottom: 45px;
+    }
+
+
+    .bloco-introducao {
+
+        padding-bottom: 45px;
+    }
+
+
+    .bloco-introducao h2 {
+
+        font-size: 26px;
+    }
+
+
+    .titulo-bloco h2 {
+
+        font-size: 22px;
+    }
+
+
+    .lista-opcoes {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .formas-negocio {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .tabela-container {
+
+        font-size: 12px;
+    }
+
+
+    th,
+    td {
+
+        padding: 12px 10px;
+    }
+
+
+    .analise-ideia {
+
+        padding: 35px 22px;
+    }
+
+
+    .analise-ideia h2 {
+
+        font-size: 23px;
+    }
+
+
+    .cards {
+
+        grid-template-columns: 1fr;
+
+        padding: 15px;
+    }
+
+
+    .extra-cards {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    footer {
+
+        flex-direction: column;
+
+        gap: 10px;
+
+        text-align: center;
+    }
+
+}

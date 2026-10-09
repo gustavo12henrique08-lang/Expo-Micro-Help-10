@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cadastro de Clientes</title>
+
+    <link rel="stylesheet" href="configuracao da tabelas.css">
+</head>
+
+<body>
+
+    <!-- BOTÃO VOLTAR -->
+    <button class="voltar" onclick="history.back()" aria-label="Voltar">
+        ←
+    </button>
+
+
+    <!-- CABEÇALHO -->
+    <header class="cabecalho">
+
+        <h1>CADASTRO DE CLIENTES</h1>
+
+        <h2>OBJETIVO DA PLANILHA</h2>
+
+        <p>
+            Manter um cadastro organizado para facilitar atendimento,
+            faturamento, entrega e comunicação pertinente com clientes.
+        </p>
+
+    </header>
+
+
+    <!-- INSTRUÇÕES -->
+    <section class="instrucoes">
+
+        <div class="instrucao">
+
+            <h3>COMO USAR — PASSO A PASSO</h3>
+
+            <p>
+                Use um código único para cada cliente. Registre nome,
+                canal de contato preferido e informações necessárias à
+                operação. Atualize dados quando o cliente informar mudanças
+                e corrija duplicidades com cuidado.
+            </p>
+
+        </div>
+
+
+        <div class="instrucao">
+
+            <h3>COMO INTERPRETAR E CUIDADOS</h3>
+
+            <p>
+                Evite coletar informações sem finalidade clara. Restrinja
+                o acesso, mantenha os dados protegidos e observe a LGPD e
+                as políticas de privacidade aplicáveis. Os dados abaixo
+                são inteiramente fictícios.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- PLANILHA -->
+    <main class="planilha-container">
+
+
+        <!-- TÍTULO -->
+        <div class="titulo-planilha">
+
+            <strong>
+                EXEMPLOS PREENCHIDOS — dados fictícios para
+            </strong>
+
+            <span>
+                Células amarelas: entrada manual |
+                Células verdes: cálculo automático
+            </span>
+
+        </div>
+
+
+        <!-- TABELA -->
+        <div class="tabela-wrapper">
+
+            <table class="planilha">
+
+                <thead>
+
+                    <tr>
+
+                        <th>Código</th>
+
+                        <th>Nome/Empresa</th>
+
+                        <th>Tipo</th>
+
+                        <th>Telefone</th>
+
+                        <th>E-mail</th>
+
+                        <th>Cidade</th>
+
+                        <th>Cadastrado em</th>
+
+                        <th>Canal preferido</th>
+
+                        <th>Perfil/observação</th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+                    <!-- CLIENTE 001 -->
+
+                    <tr>
+
+                        <td>CLI-001</td>
+
+                        <td>Marina Lopes</td>
+
+                        <td>Pessoa física</td>
+
+                        <td>(11) 90000-1001</td>
+
+                        <td>marina@exemplo.com</td>
+
+                        <td>Guarulhos</td>
+
+                        <td>01/10/2026</td>
+
+                        <td>WhatsApp</td>
+
+                        <td>Compra para casa</td>
+
+                    </tr>
+
+
+                    <!-- CLIENTE 002 -->
+
+                    <tr>
+
+                        <td>CLI-002</td>
+
+                        <td>Mercadinho Sol</td>
+
+                        <td>Pessoa jurídica</td>
+
+                        <td>(11) 90000-1002</td>
+
+                        <td>compras@sol.exemplo</td>
+
+                        <td>Guarulhos</td>
+
+                        <td>01/10/2026</td>
+
+                        <td>E-mail</td>
+
+                        <td>Compra por volume</td>
+
+                    </tr>
+
+
+                    <!-- CLIENTE 003 -->
+
+                    <tr>
+
+                        <td>CLI-003</td>
+
+                        <td>Rafael Costa</td>
+
+                        <td>Pessoa física</td>
+
+                        <td>(11) 90000-1003</td>
+
+                        <td>rafael@exemplo.com</td>
+
+                        <td>São Paulo</td>
+
+                        <td>02/10/2026</td>
+
+                        <td>Telefone</td>
+
+                        <td>Prefere retirada</td>
+
+                    </tr>
+
+
+                    <!-- CLIENTE 004 -->
+
+                    <tr>
+
+                        <td>CLI-004</td>
+
+                        <td>Ana Ribeiro</td>
+
+                        <td>Pessoa física</td>
+
+                        <td>(11) 90000-1004</td>
+
+                        <td>ana@exemplo.com</td>
+
+                        <td>Guarulhos</td>
+
+                        <td>03/10/2026</td>
+
+                        <td>WhatsApp</td>
+
+                        <td>Compra parcelada</td>
+
+                    </tr>
+
+
+                    <!-- CLIENTE 005 -->
+
+                    <tr>
+
+                        <td>CLI-005</td>
+
+                        <td>Oficina Horizonte</td>
+
+                        <td>Pessoa jurídica</td>
+
+                        <td>(11) 90000-1005</td>
+
+                        <td>contato@horizonte.exemplo</td>
+
+                        <td>Arujá</td>
+
+                        <td>04/10/2026</td>
+
+                        <td>E-mail</td>
+
+                        <td>Solicita nota fiscal</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,379 @@
+/* =========================================
+   CONFIGURAÇÕES GERAIS
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+
+    --azul-marinho: #080d52;
+
+    --azul-vivo: #075cff;
+
+    --azul-claro: #eaf1ff;
+
+    --azul-tabela: #d5e6f5;
+
+    --texto: #10131c;
+
+    --cinza: #667085;
+
+    --branco: #ffffff;
+
+    --borda: rgba(8, 13, 82, 0.35);
+
+    --alerta: #fce4d6;
+}
+
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #ffffff;
+
+    color: var(--texto);
+
+    padding: 0 3%;
+}
+
+
+/* =========================================
+   BOTÃO VOLTAR
+========================================= */
+
+.voltar {
+
+    position: fixed;
+
+    top: 15px;
+
+    left: 15px;
+
+    width: 38px;
+
+    height: 38px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: var(--azul-marinho);
+
+    color: var(--branco);
+
+    font-size: 28px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    z-index: 1000;
+
+    transition: 0.25s ease;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+.voltar:hover {
+
+    background: var(--azul-vivo);
+
+    transform: translateX(-4px);
+}
+
+
+/* =========================================
+   CABEÇALHO
+========================================= */
+
+.cabecalho {
+
+    margin-top: 25px;
+
+    margin-bottom: 42px;
+}
+
+
+.cabecalho h1 {
+
+    background: var(--azul-marinho);
+
+    color: var(--branco);
+
+    font-size: 25px;
+
+    padding: 8px 12px;
+
+    margin-bottom: 5px;
+}
+
+
+.cabecalho p {
+
+    font-size: 12px;
+
+    color: var(--cinza);
+
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   PAINEL
+========================================= */
+
+.painel-container {
+
+    width: 100%;
+}
+
+
+/* =========================================
+   TABELA
+========================================= */
+
+.tabela-wrapper {
+
+    width: 100%;
+
+    overflow-x: auto;
+}
+
+
+.painel {
+
+    width: 70%;
+
+    min-width: 700px;
+
+    border-collapse: collapse;
+
+    font-size: 12px;
+}
+
+
+/* =========================================
+   CABEÇALHO DA TABELA
+========================================= */
+
+.painel thead th {
+
+    background: var(--azul-marinho);
+
+    color: var(--branco);
+
+    padding: 4px 6px;
+
+    border-right: 1px solid var(--branco);
+
+    text-align: left;
+
+    font-weight: bold;
+
+    white-space: nowrap;
+}
+
+
+.painel thead th:last-child {
+
+    border-right: none;
+}
+
+
+/* =========================================
+   CÉLULAS
+========================================= */
+
+.painel td {
+
+    padding: 3px 6px;
+
+    border: 1px solid var(--borda);
+
+    height: 22px;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   COLUNA DE VALORES
+========================================= */
+
+.painel td.valor {
+
+    background: var(--azul-tabela);
+
+    color: #111827;
+
+    font-weight: bold;
+
+    text-align: right;
+}
+
+
+/* =========================================
+   HOVER
+========================================= */
+
+.painel tbody tr:hover td {
+
+    background: var(--azul-claro);
+}
+
+
+.painel tbody tr:hover td.valor {
+
+    background: #cbdfff;
+}
+
+
+/* =========================================
+   LEITURA GERENCIAL
+========================================= */
+
+.leitura {
+
+    margin-top: 17px;
+
+    max-width: 1100px;
+}
+
+
+.leitura h2 {
+
+    display: inline;
+
+    color: var(--azul-vivo);
+
+    font-size: 11px;
+
+    font-weight: bold;
+}
+
+
+.leitura p {
+
+    display: inline;
+
+    color: var(--cinza);
+
+    font-size: 11px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   ALERTA
+========================================= */
+
+.alerta {
+
+    margin-top: 35px;
+
+    width: 100%;
+
+    min-height: 56px;
+
+    padding: 9px 10px;
+
+    border: 2px solid var(--azul-marinho);
+
+    background: var(--alerta);
+
+    color: var(--texto);
+
+    font-size: 12px;
+
+    line-height: 1.5;
+}
+
+
+.alerta strong {
+
+    color: var(--azul-marinho);
+}
+
+
+/* =========================================
+   RESPONSIVIDADE
+========================================= */
+
+@media (max-width: 768px) {
+
+    body {
+
+        padding: 0 12px;
+    }
+
+
+    .voltar {
+
+        top: 12px;
+
+        left: 12px;
+
+        width: 42px;
+
+        height: 42px;
+
+        font-size: 24px;
+    }
+
+
+    .cabecalho {
+
+        margin-top: 70px;
+
+        margin-bottom: 30px;
+    }
+
+
+    .cabecalho h1 {
+
+        font-size: 19px;
+
+        padding: 10px;
+    }
+
+
+    .cabecalho p {
+
+        font-size: 11px;
+    }
+
+
+    .painel {
+
+        width: 100%;
+
+        min-width: 700px;
+    }
+
+
+    .leitura {
+
+        margin-top: 20px;
+    }
+
+
+    .alerta {
+
+        font-size: 11px;
+
+        margin-top: 25px;
+    }
+
+}

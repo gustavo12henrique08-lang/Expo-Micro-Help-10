@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Controle de Vendas por Canal</title>
+
+    <link rel="stylesheet" href="configuracao da tabelas.css">
+</head>
+
+<body>
+
+    <!-- BOTÃO VOLTAR -->
+    <button class="voltar" onclick="window.location.href='index.html'" aria-label="Voltar">
+        ←
+    </button>
+
+
+    <!-- CABEÇALHO -->
+    <header class="cabecalho">
+
+        <h1>CONTROLE DE VENDAS POR CANAL</h1>
+
+        <h2>OBJETIVO DA PLANILHA</h2>
+
+        <p>
+            Registrar as vendas concluídas para acompanhar faturamento,
+            quantidade, ticket médio, produtos vendidos e canais que
+            geram resultado.
+        </p>
+
+    </header>
+
+
+    <!-- INSTRUÇÕES -->
+    <section class="instrucoes">
+
+        <div class="instrucao">
+
+            <h3>COMO USAR — PASSO A PASSO</h3>
+
+            <p>
+                Use um identificador único para cada venda. Preencha data,
+                cliente, produto, quantidade, preço unitário, desconto e
+                canal. Confira se o total final bate com o pedido e registre
+                o pagamento conforme ocorreu.
+            </p>
+
+        </div>
+
+
+        <div class="instrucao">
+
+            <h3>COMO INTERPRETAR E CUIDADOS</h3>
+
+            <p>
+                Vendas canceladas ou devolvidas precisam ser identificadas
+                para não inflar os resultados. Receita de venda não é
+                necessariamente lucro: desconte custos, taxas, impostos
+                e demais despesas para avaliar rentabilidade.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- PLANILHA -->
+    <main class="planilha-container">
+
+
+        <!-- TÍTULO -->
+        <div class="titulo-planilha">
+
+            <strong>
+                EXEMPLOS PREENCHIDOS — dados fictícios para
+            </strong>
+
+            <span>
+                Células amarelas: entrada manual |
+                Células verdes: cálculo automático
+            </span>
+
+        </div>
+
+
+        <!-- TABELA -->
+        <div class="tabela-wrapper">
+
+            <table class="planilha">
+
+                <thead>
+
+                    <tr>
+
+                        <th>Data</th>
+
+                        <th>Nº venda</th>
+
+                        <th>Cliente</th>
+
+                        <th>Produto/serviço</th>
+
+                        <th>Qtd.</th>
+
+                        <th>Preço unit. (R$)</th>
+
+                        <th>Desconto (R$)</th>
+
+                        <th>Total líquido (R$)</th>
+
+                        <th>Canal</th>
+
+                        <th>Pagamento</th>
+
+                        <th>Status</th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+                    <!-- VENDA 1 -->
+
+                    <tr>
+
+                        <td>02/10/2026</td>
+
+                        <td>V-101</td>
+
+                        <td>Marina Lopes</td>
+
+                        <td>Kit organizador</td>
+
+                        <td>2</td>
+
+                        <td>R$ 45,00</td>
+
+                        <td>R$ 0,00</td>
+
+                        <td class="calculo">R$ 90,00</td>
+
+                        <td>Loja</td>
+
+                        <td>Pix</td>
+
+                        <td>Concluída</td>
+
+                    </tr>
+
+
+                    <!-- VENDA 2 -->
+
+                    <tr>
+
+                        <td>02/10/2026</td>
+
+                        <td>V-102</td>
+
+                        <td>Mercadinho Sol</td>
+
+                        <td>Caixa organizadora</td>
+
+                        <td>10</td>
+
+                        <td>R$ 32,00</td>
+
+                        <td>R$ 20,00</td>
+
+                        <td class="calculo">R$ 300,00</td>
+
+                        <td>WhatsApp</td>
+
+                        <td>Transferência</td>
+
+                        <td>Concluída</td>
+
+                    </tr>
+
+
+                    <!-- VENDA 3 -->
+
+                    <tr>
+
+                        <td>03/10/2026</td>
+
+                        <td>V-103</td>
+
+                        <td>Rafael Costa</td>
+
+                        <td>Prateleira pequena</td>
+
+                        <td>1</td>
+
+                        <td>R$ 120,00</td>
+
+                        <td>R$ 0,00</td>
+
+                        <td class="calculo">R$ 120,00</td>
+
+                        <td>Loja</td>
+
+                        <td>Crédito</td>
+
+                        <td>Concluída</td>
+
+                    </tr>
+
+
+                    <!-- VENDA 4 -->
+
+                    <tr>
+
+                        <td>04/10/2026</td>
+
+                        <td>V-104</td>
+
+                        <td>Mercadinho Sol</td>
+
+                        <td>Kit organizador</td>
+
+                        <td>5</td>
+
+                        <td>R$ 45,00</td>
+
+                        <td>R$ 5,00</td>
+
+                        <td class="calculo">R$ 220,00</td>
+
+                        <td>WhatsApp</td>
+
+                        <td>Pix</td>
+
+                        <td>Concluída</td>
+
+                    </tr>
+
+
+                    <!-- VENDA 5 -->
+
+                    <tr>
+
+                        <td>05/10/2026</td>
+
+                        <td>V-105</td>
+
+                        <td>Ana Ribeiro</td>
+
+                        <td>Organizador multiuso</td>
+
+                        <td>3</td>
+
+                        <td>R$ 28,00</td>
+
+                        <td>R$ 0,00</td>
+
+                        <td class="calculo">R$ 84,00</td>
+
+                        <td>Instagram</td>
+
+                        <td>Pix</td>
+
+                        <td>Concluída</td>
+
+                    </tr>
+
+
+                    <!-- VENDA 6 -->
+
+                    <tr>
+
+                        <td>06/10/2026</td>
+
+                        <td>V-106</td>
+
+                        <td>Carlos Mendes</td>
+
+                        <td>Caixa organizadora</td>
+
+                        <td>4</td>
+
+                        <td>R$ 32,00</td>
+
+                        <td>R$ 0,00</td>
+
+                        <td class="calculo">R$ 128,00</td>
+
+                        <td>Marketplace</td>
+
+                        <td>Crédito</td>
+
+                        <td>Concluída</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>

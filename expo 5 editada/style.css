@@ -1,0 +1,115 @@
+/* Seta de voltar por cima do chat */
+.botao-voltar {
+    position: fixed !important;
+    top: 15px;
+    left: 15px;
+    z-index: 2147483647 !important;
+
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #071d4f;
+    color: white;
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 50%;
+
+    font-size: 25px;
+    text-decoration: none;
+    cursor: pointer;
+
+    box-shadow: 0 3px 12px rgba(0,0,0,0.2);
+}
+
+.botao-voltar:hover {
+    background: #087cff;
+}
+/* Remove margens e barras desnecessárias */
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: #fff;
+}
+
+/* Área do chatbot */
+#chatbot-container {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+
+/* Chat em tela cheia, abaixo da seta */
+#chtl-chat-iframe {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    max-width: 100% !important;
+    max-height: 100% !important;
+    border: none !important;
+    display: block !important;
+    z-index: 1 !important;
+}
+
+/* Seta de voltar sempre acima do chat */
+.botao-voltar {
+    position: fixed !important;
+    top: 15px !important;
+    left: 15px !important;
+
+    z-index: 2147483647 !important;
+
+    width: 44px;
+    height: 44px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+
+    background: #071d4f;
+    color: #fff !important;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+
+    font-family: Arial, sans-serif;
+    font-size: 28px;
+    line-height: 1;
+    text-decoration: none !important;
+
+    cursor: pointer;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.3);
+
+    /* Garante que o botão aceite cliques */
+    pointer-events: auto !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+/* Efeito ao passar o mouse */
+.botao-voltar:hover {
+    background: #087cff;
+    transform: scale(1.05);
+}
+
+/* Ajuste para celulares */
+@media (max-width: 600px) {
+    .botao-voltar {
+        top: 12px !important;
+        left: 12px !important;
+        width: 42px;
+        height: 42px;
+        font-size: 26px;
+    }
+}
